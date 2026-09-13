@@ -21,7 +21,7 @@
     <img src="https://img.shields.io/badge/TWITTER-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter / X" />
   </a>
   &nbsp;
-  <a href="#">
+  <a href="https://portpolio-five-kappa.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/%E2%96%B2%20PORTFOLIO-7928CA?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
   &nbsp;
@@ -84,6 +84,7 @@ const sajal = {
 | Project | Description | Tech Stack | Link |
 | :--- | :--- | :--- | :---: |
 | 🪐 **Solaris 3D** | Interactive 3D Solar System explorer with real orbital mechanics & AI guide | Three.js, GSAP, JS | [View Live](https://solar-system-5xjaei1jg-sajalporeys-projects.vercel.app) / [Repo](https://github.com/sazzyrocks/solar-system) |
+| 🌐 **Interactive Portfolio** | Modern personal portfolio website showcasing 3D experiences, skills & projects | HTML5, CSS3, JS | [View Live](https://portpolio-five-kappa.vercel.app/) |
 | 🛡️ **VoiceShield-AI** | AI Voice Security & Shielding Platform | Python, AI/ML | [Repo](https://github.com/sazzyrocks/VoiceShield-AI) |
 | 🩺 **Repo-Doctor** | Instant repo health score, missing docs, security & CI/CD pipeline upgrade assistant | TypeScript, Node.js | [Repo](https://github.com/sazzyrocks/repo-doctor) |
 | ⚖️ **Legal Case Management** | Comprehensive MERN stack system for law firms to manage cases & clients securely | MongoDB, Express, React, Node | [Repo](https://github.com/sazzyrocks/legal_case_management) |

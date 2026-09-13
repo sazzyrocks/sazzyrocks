@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sazzyrocks (Sajal Porey) - GitHub Profile Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas: #090d16;
+      --card-bg: #0d1117;
+      --border-color: #30363d;
+      --code-bg: #161b22;
+      --text-main: #c9d1d9;
+      --text-sub: #8b949e;
+      --accent: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 36px 40px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.65);
+    }
+
+    .repo-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text-sub);
+      font-size: 14px;
+      margin-bottom: 24px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-color);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .repo-header span.highlight {
+      color: #f0f6fc;
+      font-weight: 600;
+    }
+
+    .status-badge {
+      font-size: 11px;
+      background: rgba(56, 189, 248, 0.12);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      padding: 2px 10px;
+      border-radius: 9999px;
+    }
+
+    .banner-preview {
+      margin-bottom: 18px;
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .typing-box {
+      text-align: center;
+      margin: 10px 0 16px 0;
+    }
+
+    .badges-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 18px 0 24px 0;
+    }
+
+    .badges-row a {
+      transition: transform 0.2s ease;
+      display: inline-flex;
+    }
+
+    .badges-row a:hover {
+      transform: translateY(-2.5px);
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: var(--border-color);
+      margin: 28px 0;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #f0f6fc;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .code-card {
+      background: var(--code-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 20px 24px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13.5px;
+      color: #e6edf3;
+      position: relative;
+      overflow-x: auto;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+
+    .keyword { color: #ff7b72; }
+    .variable { color: #79c0ff; }
+    .property { color: #d2a8ff; }
+    .string { color: #a5d6ff; }
+    .bracket { color: #e6edf3; }
+
+    .skills-center {
+      text-align: center;
+      margin: 16px 0;
+    }
+
+    .skills-subgroup {
+      margin-bottom: 18px;
+    }
+
+    .skills-subgroup p {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-bottom: 8px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .projects-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    .projects-table th, .projects-table td {
+      border: 1px solid var(--border-color);
+      padding: 12px 14px;
+      text-align: left;
+    }
+
+    .projects-table th {
+      background: #161b22;
+      color: #f0f6fc;
+      font-weight: 600;
+    }
+
+    .projects-table a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    .projects-table a:hover {
+      text-decoration: underline;
+    }
+
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .info-callout {
+      margin-top: 36px;
+      padding: 16px 20px;
+      background: rgba(56, 189, 248, 0.08);
+      border-left: 4px solid #38bdf8;
+      border-radius: 0 8px 8px 0;
+      font-size: 14px;
+    }
+
+    .info-callout strong {
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="repo-header">
+      <div>
+        <span>sazzyrocks</span> / <span class="highlight">README.md</span>
+      </div>
+      <div class="status-badge">Live Ready</div>
+    </div>
+
+    <!-- Animated Banner preview -->
+    <div class="banner-preview">
+      <object type="image/svg+xml" data="./assets/header.svg" width="100%"></object>
+    </div>
+
+    <!-- Dynamic Typing Subtitle -->
+    <div class="typing-box">
+      <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=19&pause=1000&color=38BDF8&center=true&vCenter=true&width=550&lines=B.Tech+CSE+Student+%7C+Problem+Solver;Passionate+about+DSA+%26+Backend+Systems;Building+3D+Web+Experiences+%26+AI+Agents;C%2B%2B+%E2%80%A2+Java+%E2%80%A2+Python+%E2%80%A2+JavaScript+%E2%80%A2+React" alt="Typing SVG" />
+    </div>
+
+    <!-- Social Badges -->
+    <div class="badges-row">
+      <a href="#"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+      <a href="#"><img src="https://img.shields.io/badge/TWITTER-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter" /></a>
+      <a href="#"><img src="https://img.shields.io/badge/%E2%96%B2%20PORTFOLIO-7928CA?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+      <a href="#"><img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+    </div>
+
+    <hr>
+
+    <h3>⚡ About Me</h3>
+
+    <div class="code-card">
+      <pre><code><span class="keyword">const</span> <span class="variable">sajal</span> = <span class="bracket">{</span>
+    <span class="property">role</span>:       <span class="string">"B.Tech CSE Student & Software Builder"</span>,
+    <span class="property">interests</span>:  <span class="bracket">[</span><span class="string">"DSA & Problem Solving"</span>, <span class="string">"Backend Systems"</span>, <span class="string">"3D Web"</span>, <span class="string">"AI Agents"</span><span class="bracket">]</span>,
+    <span class="property">building</span>:   <span class="bracket">[</span>
+        <span class="string">"Solaris 3D (Interactive Three.js & GSAP Solar System)"</span>,
+        <span class="string">"VoiceShield-AI (AI Voice Security & Shield)"</span>,
+        <span class="string">"Repo-Doctor (GitHub Repo Health & Upgrade Tool)"</span>,
+        <span class="string">"Enterprise Legal & Project Management Systems"</span>
+    <span class="bracket">]</span>,
+    <span class="property">core_stack</span>: <span class="bracket">[</span><span class="string">"C++"</span>, <span class="string">"Java"</span>, <span class="string">"Python"</span>, <span class="string">"JavaScript"</span>, <span class="string">"TypeScript"</span>, <span class="string">"React"</span>, <span class="string">"Node.js"</span><span class="bracket">]</span>,
+    <span class="property">location</span>:   <span class="string">"India 🇮🇳"</span>,
+    <span class="property">fun_fact</span>:   <span class="string">"Turning complex algorithms into interactive, production-grade applications 🚀"</span>
+<span class="bracket">}</span>;</code></pre>
+    </div>
+
+    <hr>
+
+    <h3>🛠️ Tech Stack & Skills</h3>
+    <div class="skills-center">
+      <div class="skills-subgroup">
+        <p>Languages</p>
+        <img src="https://skillicons.dev/icons?i=c,cpp,java,py,js,ts,html,css" alt="Languages" />
+      </div>
+      <div class="skills-subgroup">
+        <p>Frameworks, Libraries & 3D</p>
+        <img src="https://skillicons.dev/icons?i=react,nodejs,express,tailwind,threejs,bootstrap" alt="Frameworks" />
+      </div>
+      <div class="skills-subgroup">
+        <p>Databases, DevOps & Tools</p>
+        <img src="https://skillicons.dev/icons?i=mongodb,mysql,git,github,docker,linux,vscode,postman" alt="Tools" />
+      </div>
+    </div>
+
+    <hr>
+
+    <h3>🌟 Featured Repositories</h3>
+    <table class="projects-table">
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Description</th>
+          <th>Tech Stack</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>🪐 <strong>Solaris 3D</strong></td>
+          <td>Interactive 3D Solar System explorer with real orbital mechanics & AI space guide</td>
+          <td>Three.js, GSAP, JS</td>
+          <td><a href="https://solar-system-5xjaei1jg-sajalporeys-projects.vercel.app" target="_blank">Live Demo</a> / <a href="https://github.com/sazzyrocks/solar-system" target="_blank">Repo</a></td>
+        </tr>
+        <tr>
+          <td>🛡️ <strong>VoiceShield-AI</strong></td>
+          <td>AI Voice Security & Shielding Platform</td>
+          <td>Python, AI/ML</td>
+          <td><a href="https://github.com/sazzyrocks/VoiceShield-AI" target="_blank">Repo</a></td>
+        </tr>
+        <tr>
+          <td>🩺 <strong>Repo-Doctor</strong></td>
+          <td>Instant repo health score, missing docs, security & CI/CD pipeline upgrade assistant</td>
+          <td>TypeScript, Node.js</td>
+          <td><a href="https://github.com/sazzyrocks/repo-doctor" target="_blank">Repo</a></td>
+        </tr>
+        <tr>
+          <td>⚖️ <strong>Legal Case Management</strong></td>
+          <td>Comprehensive MERN stack system for law firms to manage cases & clients securely</td>
+          <td>MongoDB, Express, React, Node</td>
+          <td><a href="https://github.com/sazzyrocks/legal_case_management" target="_blank">Repo</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h3>📈 GitHub Analytics & Streak</h3>
+    <div class="stats-row">
+      <img src="https://github-readme-stats.vercel.app/api?username=sazzyrocks&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080a10&title_color=38bdf8&text_color=94a3b8&icon_color=a855f7" alt="GitHub Stats" height="165" />
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=sazzyrocks&theme=tokyonight&hide_border=true&background=080a10&ring=6366f1&fire=f43f5e&currStreakLabel=38bdf8" alt="GitHub Streak" height="165" />
+    </div>
+
+    <div class="stats-row" style="margin-top: 14px;">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sazzyrocks&layout=compact&theme=tokyonight&hide_border=true&bg_color=080a10&title_color=38bdf8&text_color=94a3b8" alt="Top Languages" height="145" />
+    </div>
+
+    <hr>
+
+    <h3>🐍 GitHub Contribution Snake Game</h3>
+    <div style="text-align: center; margin: 18px 0; background: #080a10; border: 1px solid #30363d; border-radius: 8px; padding: 16px;">
+      <img src="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg" onerror="this.onerror=null; this.src='https://github-readme-activity-graph.vercel.app/graph?username=sazzyrocks&theme=tokyo-night&hide_border=true&area=true';" alt="Contribution Snake Animation" width="100%" />
+      <p style="font-size: 12px; color: #8b949e; margin-top: 10px;">
+        🎮 GitHub Actions me <code>.github/workflows/snake.yml</code> run hote hi ye live contribution snake ban jayega!
+      </p>
+    </div>
+
+    <div class="info-callout">
+      <strong>🚀 Ready to Deploy:</strong> Aap GitHub par ek nayi repository banayein jiska naam <code>sazzyrocks</code> ho (special profile repo), aur ye <code>README.md</code> aur <code>assets/</code> folder usme push kar dein!
+    </div>
+  </div>
+
+</body>
+</html>

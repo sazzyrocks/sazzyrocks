@@ -1,0 +1,183 @@
+<svg fill="none" viewBox="0 0 850 250" width="100%" height="250" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes gradientMove {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+
+        @keyframes pulseGlow {
+          0%, 100% {
+            opacity: 0.4;
+            transform: scale(1);
+          }
+          50% {
+            opacity: 0.85;
+            transform: scale(1.1);
+          }
+        }
+
+        @keyframes floatEffect {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-5px); }
+        }
+
+        @keyframes textShimmer {
+          0% { background-position: 0% center; }
+          100% { background-position: 200% center; }
+        }
+
+        .banner-container {
+          position: relative;
+          width: 100%;
+          height: 250px;
+          border-radius: 18px;
+          background: #080a10;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.9), 0 0 35px rgba(99, 102, 241, 0.15);
+        }
+
+        /* Ambient glowing orbs */
+        .ambient-glow {
+          position: absolute;
+          width: 360px;
+          height: 200px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(99, 102, 241, 0.35) 0%, rgba(168, 85, 247, 0.22) 50%, transparent 75%);
+          filter: blur(45px);
+          animation: pulseGlow 5s ease-in-out infinite;
+          pointer-events: none;
+        }
+
+        .ambient-glow-2 {
+          position: absolute;
+          width: 280px;
+          height: 160px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(56, 189, 248, 0.3) 0%, rgba(20, 184, 166, 0.15) 50%, transparent 75%);
+          filter: blur(40px);
+          animation: pulseGlow 7s ease-in-out infinite reverse;
+          pointer-events: none;
+        }
+
+        /* Subtle modern grid pattern */
+        .grid-pattern {
+          position: absolute;
+          inset: 0;
+          background-image: 
+            linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+          background-size: 26px 26px;
+          mask-image: radial-gradient(circle at center, black 45%, transparent 80%);
+          -webkit-mask-image: radial-gradient(circle at center, black 45%, transparent 80%);
+          pointer-events: none;
+        }
+
+        .content-wrap {
+          position: relative;
+          z-index: 2;
+          text-align: center;
+          animation: floatEffect 5s ease-in-out infinite;
+          padding: 0 20px;
+        }
+
+        .main-title {
+          font-size: 48px;
+          font-weight: 800;
+          letter-spacing: -0.5px;
+          margin: 0 0 8px 0;
+          background: linear-gradient(90deg, #ffffff 0%, #cbd5e1 25%, #818cf8 50%, #38bdf8 75%, #ffffff 100%);
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: textShimmer 6s linear infinite;
+          text-shadow: 0 0 35px rgba(129, 140, 248, 0.3);
+        }
+
+        .subtitle {
+          font-size: 17px;
+          font-weight: 500;
+          letter-spacing: 2.5px;
+          text-transform: uppercase;
+          color: #94a3b8;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+        }
+
+        .dot {
+          color: #6366f1;
+          font-size: 14px;
+        }
+
+        .tag-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          margin-top: 15px;
+          padding: 6px 16px;
+          background: rgba(255, 255, 255, 0.04);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 9999px;
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          color: #38bdf8;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .live-dot {
+          width: 8px;
+          height: 8px;
+          background-color: #10b981;
+          border-radius: 50%;
+          box-shadow: 0 0 10px #10b981;
+          animation: pulseGlow 2s ease-in-out infinite;
+        }
+
+        /* Border top neon line */
+        .neon-bar {
+          position: absolute;
+          top: 0;
+          left: 12%;
+          right: 12%;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, #6366f1, #a855f7, #38bdf8, transparent);
+          opacity: 0.85;
+        }
+      </style>
+
+      <div class="banner-container">
+        <div class="neon-bar"></div>
+        <div class="ambient-glow"></div>
+        <div class="ambient-glow-2"></div>
+        <div class="grid-pattern"></div>
+
+        <div class="content-wrap">
+          <h1 class="main-title">Sajal Porey</h1>
+          <p class="subtitle">
+            <span>Engineer</span>
+            <span class="dot">•</span>
+            <span>Full-Stack Builder</span>
+            <span class="dot">•</span>
+            <span>AI Explorer</span>
+          </p>
+          <div class="tag-badge">
+            <span class="live-dot"></span>
+            <span>B.Tech CSE • Building Scalable Web &amp; AI Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

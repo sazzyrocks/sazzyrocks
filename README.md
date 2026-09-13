@@ -93,7 +93,7 @@ const sajal = {
 ### 📈 GitHub Analytics & Streak
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sazzyrocks&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080a10&title_color=38bdf8&text_color=94a3b8&icon_color=a855f7" alt="Sajal's GitHub Stats" height="165" />
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=sazzyrocks&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080a10&title_color=38bdf8&text_color=94a3b8&icon_color=a855f7" alt="Sajal's GitHub Stats" height="165" />
   &nbsp;
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=sazzyrocks&theme=tokyonight&hide_border=true&background=080a10&ring=6366f1&fire=f43f5e&currStreakLabel=38bdf8" alt="Sajal's GitHub Streak" height="165" />
 </div>
@@ -101,7 +101,7 @@ const sajal = {
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sazzyrocks&layout=compact&theme=tokyonight&hide_border=true&bg_color=080a10&title_color=38bdf8&text_color=94a3b8" alt="Top Languages" height="145" />
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=sazzyrocks&layout=compact&theme=tokyonight&hide_border=true&bg_color=080a10&title_color=38bdf8&text_color=94a3b8" alt="Top Languages" height="145" />
 </div>
 
 <br/>
@@ -110,9 +110,9 @@ const sajal = {
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake.svg">
-    <img alt="Sajal's GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg?v=1">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake.svg?v=1">
+    <img alt="Sajal's GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg?v=1" />
   </picture>
 </div>
 

@@ -17,7 +17,7 @@
     <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   &nbsp;
-  <a href="#">
+  <a href="https://x.com/SajalPorey27356" target="_blank">
     <img src="https://img.shields.io/badge/TWITTER-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter / X" />
   </a>
   &nbsp;
@@ -25,7 +25,7 @@
     <img src="https://img.shields.io/badge/%E2%96%B2%20PORTFOLIO-7928CA?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
   &nbsp;
-  <a href="#">
+  <a href="mailto:sajal.porey20@gmail.com">
     <img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 

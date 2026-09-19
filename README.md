@@ -83,7 +83,7 @@ const sajal = {
 
 | Project | Description | Tech Stack | Link |
 | :--- | :--- | :--- | :---: |
-| 🪐 **Solaris 3D** | Interactive 3D Solar System explorer with real orbital mechanics & AI guide | Three.js, GSAP, JS | [View Live](https://solar-system-5xjaei1jg-sajalporeys-projects.vercel.app) / [Repo](https://github.com/sazzyrocks/solar-system) |
+| 🪐 **Solaris 3D** | Interactive 3D Solar System explorer with real orbital mechanics & AI guide | Three.js, GSAP, JS | [View Live](https://solar-system-ivory-rho.vercel.app/) / [Repo](https://github.com/sazzyrocks/solar-system) |
 | 🌐 **Interactive Portfolio** | Modern personal portfolio website showcasing 3D experiences, skills & projects | HTML5, CSS3, JS | [View Live](https://portpolio-five-kappa.vercel.app/) |
 | 🛡️ **VoiceShield-AI** | AI Voice Security & Shielding Platform | Python, AI/ML | [Repo](https://github.com/sazzyrocks/VoiceShield-AI) |
 | 🩺 **Repo-Doctor** | Instant repo health score, missing docs, security & CI/CD pipeline upgrade assistant | TypeScript, Node.js | [Repo](https://github.com/sazzyrocks/repo-doctor) |

@@ -13,7 +13,7 @@
   <br/><br/>
 
   <!-- Social Badges (Clickable) -->
-  <a href="#">
+  <a href="https://www.linkedin.com/in/sajal-p-786263325/" target="_blank">
     <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   &nbsp;

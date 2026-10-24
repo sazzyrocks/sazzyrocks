@@ -1,264 +1,109 @@
-<svg fill="none" viewBox="0 0 850 280" width="100%" height="280" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 850 220" width="100%" height="220" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05070f" />
-      <stop offset="45%" stop-color="#090d1a" />
-      <stop offset="100%" stop-color="#060812" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c0a09" />
+      <stop offset="100%" stop-color="#080605" />
     </linearGradient>
 
-    <!-- Neon Header Line Gradient -->
-    <linearGradient id="neonLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="transparent" />
-      <stop offset="15%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#a855f7" />
-      <stop offset="85%" stop-color="#f43f5e" />
-      <stop offset="100%" stop-color="transparent" />
-    </linearGradient>
-
-    <!-- Main Title Gradient -->
-    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="28%" stop-color="#e0e7ff" />
-      <stop offset="65%" stop-color="#7dd3fc" />
-      <stop offset="100%" stop-color="#38bdf8" />
-    </linearGradient>
-
-    <!-- Cyan-Violet Glow Gradient -->
-    <linearGradient id="cyanViolet" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="50%" stop-color="#6366f1" />
-      <stop offset="100%" stop-color="#a855f7" />
-    </linearGradient>
-
-    <!-- Pill Badges Fill Gradient -->
-    <linearGradient id="pillBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.07)" />
-      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)" />
-    </linearGradient>
-
-    <!-- Radial Nebula Glows -->
-    <radialGradient id="nebulaCyan" cx="22%" cy="40%" r="45%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.22" />
-      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.04" />
-      <stop offset="100%" stop-color="transparent" />
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0" />
     </radialGradient>
 
-    <radialGradient id="nebulaViolet" cx="78%" cy="45%" r="48%">
-      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.24" />
-      <stop offset="65%" stop-color="#8b5cf6" stop-opacity="0.05" />
-      <stop offset="100%" stop-color="transparent" />
-    </radialGradient>
-
-    <radialGradient id="nebulaCore" cx="50%" cy="30%" r="35%">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.20" />
-      <stop offset="100%" stop-color="transparent" />
-    </radialGradient>
-
-    <!-- Grid Pattern -->
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="rgba(255, 255, 255, 0.035)" stroke-width="1" />
-    </pattern>
-
-    <!-- Radial Mask for Grid -->
-    <mask id="gridMask">
-      <radialGradient id="maskGrad" cx="50%" cy="50%" r="50%">
-        <stop offset="30%" stop-color="#ffffff" />
-        <stop offset="85%" stop-color="#666666" />
-        <stop offset="100%" stop-color="#000000" />
-      </radialGradient>
-      <rect width="850" height="280" fill="url(#maskGrad)" />
-    </mask>
-
-    <!-- Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
-    <filter id="heavyGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="12" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <linearGradient id="line" gradientUnits="userSpaceOnUse" x1="365" y1="0" x2="485" y2="0">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0" />
+      <stop offset="50%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0" />
+    </linearGradient>
   </defs>
 
   <style>
-    @keyframes orbitRotate {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.15; }
+      50% { opacity: 0.9; }
     }
-    @keyframes orbitCounter {
-      from { transform: rotate(360deg); }
-      to { transform: rotate(0deg); }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 0.55; }
-      50% { opacity: 0.95; }
-    }
-    @keyframes liveBlink {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.85); }
-    }
-    @keyframes floatY {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-3.5px); }
+    @keyframes breathe {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
     }
 
-    .base-card {
-      stroke: #1e293b;
-      stroke-width: 1.2;
-    }
-    .orbit-ring-1 {
-      transform-origin: 425px 68px;
-      animation: orbitRotate 16s linear infinite;
-    }
-    .orbit-ring-2 {
-      transform-origin: 425px 68px;
-      animation: orbitCounter 22s linear infinite;
-    }
-    .glow-anim {
-      animation: pulseGlow 4s ease-in-out infinite;
-    }
-    .live-indicator {
-      transform-origin: 708px 30px;
-      animation: liveBlink 2s ease-in-out infinite;
-    }
-    .hero-content {
-      animation: floatY 5s ease-in-out infinite;
-    }
-    .mono-text {
-      font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, Menlo, Monaco, Consolas, monospace;
-    }
-    .sans-text {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    }
+    .tw { animation: twinkle 4s ease-in-out infinite; }
+    .glow { animation: breathe 6s ease-in-out infinite; }
+    .name { animation: fadeUp 1.2s ease-out both; }
+    .role { animation: fadeUp 1.2s ease-out 0.4s both; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
   </style>
 
-  <!-- Base Card Container -->
-  <rect class="base-card" width="850" height="280" rx="16" fill="url(#bgGrad)" />
+  <!-- Base -->
+  <rect width="850" height="220" rx="16" fill="url(#bg)" stroke="#1c1917" stroke-width="1" />
 
-  <!-- Grid Pattern Overlay -->
-  <rect width="850" height="280" fill="url(#grid)" mask="url(#gridMask)" />
+  <!-- Stars -->
+  <circle cx="386.0" cy="121.7" r="0.68" fill="#ffffff" opacity="0.21" />
+  <circle class="tw" cx="434.7" cy="135.5" r="0.55" fill="#ffffff" style="animation-delay: -3.2s;" />
+  <circle cx="583.2" cy="20.2" r="0.98" fill="#ffffff" opacity="0.37" />
+  <circle class="tw" cx="144.8" cy="14.9" r="0.39" fill="#ffffff" style="animation-delay: -1.0s;" />
+  <circle cx="40.6" cy="102.9" r="0.9" fill="#ffffff" opacity="0.37" />
+  <circle cx="243.5" cy="207.5" r="0.9" fill="#ffffff" opacity="0.26" />
+  <circle cx="203.9" cy="68.7" r="1.33" fill="#ffffff" opacity="0.45" />
+  <circle class="tw" cx="332.2" cy="199.8" r="0.35" fill="#ffffff" style="animation-delay: -3.6s;" />
+  <circle cx="400.4" cy="204.2" r="0.4" fill="#ffffff" opacity="0.42" />
+  <circle cx="236.7" cy="29.1" r="0.98" fill="#ffffff" opacity="0.19" />
+  <circle class="tw" cx="217.5" cy="31.8" r="1.34" fill="#ffffff" style="animation-delay: -2.2s;" />
+  <circle cx="382.0" cy="49.4" r="0.44" fill="#ffffff" opacity="0.19" />
+  <circle cx="360.2" cy="53.7" r="0.98" fill="#ffffff" opacity="0.26" />
+  <circle cx="739.8" cy="53.3" r="0.91" fill="#ffffff" opacity="0.19" />
+  <circle cx="825.2" cy="53.8" r="0.85" fill="#ffffff" opacity="0.25" />
+  <circle cx="76.0" cy="29.7" r="0.51" fill="#ffffff" opacity="0.28" />
+  <circle cx="386.7" cy="200.0" r="0.72" fill="#ffffff" opacity="0.21" />
+  <circle class="tw" cx="142.1" cy="190.1" r="0.51" fill="#ffffff" style="animation-delay: -3.0s;" />
+  <circle cx="785.3" cy="50.5" r="0.92" fill="#ffffff" opacity="0.30" />
+  <circle cx="100.9" cy="19.6" r="0.5" fill="#ffffff" opacity="0.24" />
+  <circle cx="689.8" cy="128.9" r="0.46" fill="#ffffff" opacity="0.17" />
+  <circle cx="202.8" cy="121.6" r="0.53" fill="#ffffff" opacity="0.22" />
+  <circle class="tw" cx="29.6" cy="64.8" r="0.39" fill="#ffffff" style="animation-delay: -1.5s;" />
+  <circle cx="484.0" cy="37.8" r="0.93" fill="#ffffff" opacity="0.38" />
+  <circle cx="44.7" cy="15.5" r="0.81" fill="#ffffff" opacity="0.16" />
+  <circle class="tw" cx="536.4" cy="106.5" r="1.0" fill="#ffffff" style="animation-delay: -2.2s;" />
+  <circle cx="618.9" cy="188.4" r="0.81" fill="#ffffff" opacity="0.47" />
+  <circle cx="303.8" cy="146.3" r="0.62" fill="#ffffff" opacity="0.45" />
+  <circle cx="539.0" cy="206.7" r="0.82" fill="#ffffff" opacity="0.41" />
+  <circle class="tw" cx="491.2" cy="98.3" r="0.84" fill="#ffffff" style="animation-delay: -2.4s;" />
+  <circle cx="409.4" cy="57.1" r="0.67" fill="#ffffff" opacity="0.47" />
+  <circle class="tw" cx="225.3" cy="14.2" r="0.79" fill="#ffffff" style="animation-delay: -0.7s;" />
+  <circle cx="756.9" cy="141.4" r="0.93" fill="#ffffff" opacity="0.38" />
+  <circle cx="178.4" cy="96.5" r="0.92" fill="#ffffff" opacity="0.35" />
+  <circle cx="274.9" cy="38.7" r="0.89" fill="#ffffff" opacity="0.40" />
+  <circle class="tw" cx="793.1" cy="66.3" r="0.64" fill="#ffffff" style="animation-delay: -0.9s;" />
+  <circle class="tw" cx="274.0" cy="176.5" r="0.64" fill="#ffffff" style="animation-delay: -0.1s;" />
+  <circle cx="730.0" cy="20.1" r="0.72" fill="#ffffff" opacity="0.43" />
+  <circle cx="31.6" cy="38.6" r="0.37" fill="#ffffff" opacity="0.23" />
+  <circle cx="131.2" cy="21.2" r="0.64" fill="#ffffff" opacity="0.38" />
+  <circle cx="676.4" cy="199.9" r="0.48" fill="#ffffff" opacity="0.21" />
+  <circle class="tw" cx="24.8" cy="104.6" r="0.47" fill="#ffffff" style="animation-delay: -1.4s;" />
+  <circle cx="634.6" cy="89.1" r="0.41" fill="#ffffff" opacity="0.40" />
+  <circle cx="122.3" cy="100.9" r="0.94" fill="#ffffff" opacity="0.35" />
+  <circle cx="735.3" cy="168.2" r="0.65" fill="#ffffff" opacity="0.22" />
+  <circle class="tw" cx="606.5" cy="172.4" r="0.82" fill="#ffffff" style="animation-delay: -3.6s;" />
+  <circle cx="818.0" cy="203.6" r="0.86" fill="#ffffff" opacity="0.47" />
+  <circle cx="716.0" cy="80.3" r="0.64" fill="#ffffff" opacity="0.42" />
+  <circle cx="414.7" cy="17.6" r="0.39" fill="#ffffff" opacity="0.21" />
+  <circle cx="290.0" cy="166.4" r="0.45" fill="#ffffff" opacity="0.40" />
+  <circle cx="703.1" cy="147.1" r="0.67" fill="#ffffff" opacity="0.18" />
+  <circle cx="706.1" cy="121.8" r="0.6" fill="#ffffff" opacity="0.47" />
 
-  <!-- Ambient Nebulas -->
-  <circle cx="180" cy="110" r="180" fill="url(#nebulaCyan)" class="glow-anim" />
-  <circle cx="680" cy="130" r="200" fill="url(#nebulaViolet)" class="glow-anim" style="animation-delay: -2s;" />
-  <circle cx="425" cy="80" r="150" fill="url(#nebulaCore)" />
+  <!-- Soft glow behind name -->
+  <ellipse class="glow" cx="425" cy="104" rx="300" ry="90" fill="url(#glow)" />
 
-  <!-- Top Neon Bar -->
-  <line x1="80" y1="1.5" x2="770" y2="1.5" stroke="url(#neonLine)" stroke-width="2.5" />
-  <line x1="240" y1="2" x2="610" y2="2" stroke="#38bdf8" stroke-width="1.5" opacity="0.6" filter="url(#glow)" />
+  <!-- Name -->
+  <text class="sans name" x="425" y="112" font-size="46" font-weight="300" letter-spacing="14" fill="#fafaf9" text-anchor="middle">SAJAL POREY</text>
 
-  <!-- Sci-Fi Corner Brackets -->
-  <path d="M 24 38 L 24 24 L 38 24" fill="none" stroke="#38bdf8" stroke-width="1.8" opacity="0.65" />
-  <path d="M 826 38 L 826 24 L 812 24" fill="none" stroke="#a855f7" stroke-width="1.8" opacity="0.65" />
-  <path d="M 24 242 L 24 256 L 38 256" fill="none" stroke="#38bdf8" stroke-width="1.8" opacity="0.4" />
-  <path d="M 826 242 L 826 256 L 812 256" fill="none" stroke="#a855f7" stroke-width="1.8" opacity="0.4" />
+  <!-- Divider -->
+  <line class="role" x1="365" y1="134" x2="485" y2="134" stroke="url(#line)" stroke-width="1.2" />
 
-  <!-- Top System Bar -->
-  <!-- Left: System Status Tag -->
-  <g class="mono-text" font-size="11" letter-spacing="1">
-    <rect x="52" y="19" width="168" height="22" rx="11" fill="rgba(56, 189, 248, 0.07)" stroke="rgba(56, 189, 248, 0.25)" stroke-width="1" />
-    <polygon points="64,30 68,25 74,25 78,30 74,35 68,35" fill="#38bdf8" opacity="0.8" />
-    <text x="86" y="34.5" fill="#7dd3fc" font-weight="600">SYS.READY // DEV_ENV</text>
-  </g>
-
-  <!-- Right: Availability Live Badge -->
-  <g class="mono-text" font-size="11" letter-spacing="1">
-    <rect x="626" y="19" width="172" height="22" rx="11" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.25)" stroke-width="1" />
-    <circle class="live-indicator" cx="642" cy="30" r="4.5" fill="#10b981" filter="url(#glow)" />
-    <text x="654" y="34.5" fill="#34d399" font-weight="600">AVAILABLE FOR WORK</text>
-  </g>
-
-  <!-- Hero Center Content -->
-  <g class="hero-content">
-
-    <!-- Cyber Emblem & Orbit Rings (Centered at 425, 68) -->
-    <g transform="translate(0, 0)">
-      <!-- Outer Orbit Ring (Dashed, Rotating) -->
-      <circle class="orbit-ring-1" cx="425" cy="68" r="32" fill="none" stroke="url(#cyanViolet)" stroke-width="1.4" stroke-dasharray="6 5" opacity="0.85" />
-      <!-- Satellite Point on Orbit 1 -->
-      <circle class="orbit-ring-1" cx="457" cy="68" r="2.8" fill="#38bdf8" filter="url(#glow)" />
-
-      <!-- Inner Orbit Ring (Counter-rotating) -->
-      <circle class="orbit-ring-2" cx="425" cy="68" r="23" fill="none" stroke="#818cf8" stroke-width="1" stroke-dasharray="3 3" opacity="0.6" />
-      <circle class="orbit-ring-2" cx="402" cy="68" r="2.2" fill="#c084fc" />
-
-      <!-- Glowing Center Core Hexagon -->
-      <polygon points="425,49 441,58 441,78 425,87 409,78 409,58" fill="#0d111e" stroke="url(#cyanViolet)" stroke-width="1.5" filter="url(#glow)" />
-
-      <!-- Code Icon in Core: </ > -->
-      <text class="mono-text" x="425" y="73" font-size="14" font-weight="800" fill="#38bdf8" text-anchor="middle">&lt;/&gt;</text>
-    </g>
-
-    <!-- Main Title: SAJAL POREY -->
-    <text class="sans-text" x="425" y="134" font-size="44" font-weight="900" letter-spacing="4" fill="url(#titleGrad)" text-anchor="middle" filter="url(#glow)">SAJAL POREY</text>
-
-    <!-- Subtitle / Roles Bar -->
-    <g class="sans-text" font-size="12.5" font-weight="700" letter-spacing="2.8" text-anchor="middle">
-      <text x="425" y="162">
-        <tspan fill="#38bdf8">//</tspan>
-        <tspan fill="#e2e8f0"> FULL-STACK ARCHITECT </tspan>
-        <tspan fill="#6366f1">•</tspan>
-        <tspan fill="#e2e8f0"> 3D WEB EXPERIENCES </tspan>
-        <tspan fill="#a855f7">•</tspan>
-        <tspan fill="#e2e8f0"> AI SYSTEMS </tspan>
-        <tspan fill="#38bdf8">//</tspan>
-      </text>
-    </g>
-
-    <!-- Floating Interactive Pill Badges (Y = 196) -->
-    <g class="mono-text" font-size="11.5" font-weight="600" letter-spacing="0.8">
-      <!-- Pill 1: Solaris 3D -->
-      <g transform="translate(130, 196)">
-        <rect width="132" height="28" rx="14" fill="url(#pillBg)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1" />
-        <circle cx="16" cy="14" r="3.5" fill="#38bdf8" filter="url(#glow)" />
-        <text x="26" y="18" fill="#e0f2fe">🪐 Solaris 3D</text>
-      </g>
-
-      <!-- Pill 2: VoiceShield AI -->
-      <g transform="translate(276, 196)">
-        <rect width="156" height="28" rx="14" fill="url(#pillBg)" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1" />
-        <circle cx="16" cy="14" r="3.5" fill="#a855f7" filter="url(#glow)" />
-        <text x="26" y="18" fill="#f3e8ff">🛡️ VoiceShield AI</text>
-      </g>
-
-      <!-- Pill 3: DSA & Backend -->
-      <g transform="translate(446, 196)">
-        <rect width="154" height="28" rx="14" fill="url(#pillBg)" stroke="rgba(99, 102, 241, 0.3)" stroke-width="1" />
-        <circle cx="16" cy="14" r="3.5" fill="#6366f1" filter="url(#glow)" />
-        <text x="26" y="18" fill="#e0e7ff">⚡ DSA &amp; Backend</text>
-      </g>
-
-      <!-- Pill 4: B.Tech CSE -->
-      <g transform="translate(614, 196)">
-        <rect width="116" height="28" rx="14" fill="url(#pillBg)" stroke="rgba(244, 63, 94, 0.3)" stroke-width="1" />
-        <circle cx="16" cy="14" r="3.5" fill="#f43f5e" filter="url(#glow)" />
-        <text x="26" y="18" fill="#ffe4e6">🚀 B.Tech CSE</text>
-      </g>
-    </g>
-
-  </g>
-
-  <!-- Bottom Cyber Baseline & Accents -->
-  <line x1="80" y1="250" x2="770" y2="250" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" />
-  <line x1="320" y1="250" x2="530" y2="250" stroke="url(#neonLine)" stroke-width="1.8" />
-  
-  <!-- Mini Tech Hash Ticks along the bottom -->
-  <g stroke="rgba(56, 189, 248, 0.35)" stroke-width="1.2">
-    <line x1="390" y1="246" x2="390" y2="254" />
-    <line x1="425" y1="244" x2="425" y2="256" stroke="#38bdf8" />
-    <line x1="460" y1="246" x2="460" y2="254" />
-  </g>
-
-  <!-- Bottom Location / Tag -->
-  <text class="mono-text" x="425" y="268" font-size="10" font-weight="500" letter-spacing="2" fill="#64748b" text-anchor="middle">
-    LOCATION: INDIA [IN] • LATENCY: &lt;10MS • TURNING CODE INTO IMPACT
-  </text>
+  <!-- Role -->
+  <text class="sans role" x="425" y="160" font-size="13" font-weight="500" letter-spacing="5" fill="#a8a29e" text-anchor="middle">SOFTWARE DEVELOPER  ·  B.TECH CSE</text>
 </svg>

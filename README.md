@@ -7,39 +7,39 @@
 
   <!-- Dynamic Typing Subtitle -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=19&pause=1000&color=38BDF8&center=true&vCenter=true&width=550&lines=B.Tech+CSE+Student+%7C+Problem+Solver;Passionate+about+DSA+%26+Backend+Systems;Building+3D+Web+Experiences+%26+AI+Agents;C%2B%2B+%E2%80%A2+Java+%E2%80%A2+Python+%E2%80%A2+JavaScript+%E2%80%A2+React" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1200&color=38BDF8&center=true&vCenter=true&width=620&lines=%F0%9F%91%8B+Hey%2C+I'm+Sajal+Porey!;%F0%9F%AA%90+Building+Solaris+3D+Interactive+Experiences;%F0%9F%9B%A1%EF%B8%8F+Architecting+VoiceShield-AI+Agent+Systems;%E2%9A%A1+Passionate+about+DSA+%26+Backend+Architecture;%F0%9F%92%BB+C%2B%2B+%E2%80%A2+Java+%E2%80%A2+Python+%E2%80%A2+TypeScript+%E2%80%A2+React" alt="Typing SVG" />
   </a>
 
   <br/><br/>
 
-  <!-- Social Badges (Clickable) -->
+  <!-- Social Badges (Clickable, Premium Dark Tokyo Night Style) -->
   <a href="https://www.linkedin.com/in/sajal-p-786263325/" target="_blank">
-    <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=080a10" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="https://x.com/SajalPorey27356" target="_blank">
-    <img src="https://img.shields.io/badge/TWITTER-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter / X" />
+    <img src="https://img.shields.io/badge/Twitter%20%2F%20X-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=080a10" alt="Twitter / X" />
   </a>
   &nbsp;
   <a href="https://portpolio-five-kappa.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/%E2%96%B2%20PORTFOLIO-7928CA?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+    <img src="https://img.shields.io/badge/%E2%96%B2%20Portfolio-6366F1?style=for-the-badge&logo=vercel&logoColor=white&labelColor=080a10" alt="Portfolio" />
   </a>
   &nbsp;
   <a href="mailto:sajal.porey20@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Get%20in%20Touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=080a10" alt="Email" />
   </a>
 
   <br/><br/>
 
-  <!-- Profile Counters -->
-  <img src="https://komarev.com/ghpvc/?username=sazzyrocks&style=flat-square&color=38bdf8&label=PROFILE+VIEWS" alt="Profile Views" />
+  <!-- Profile Counters (Cohesive with Tokyo Night Palette) -->
+  <img src="https://komarev.com/ghpvc/?username=sazzyrocks&style=for-the-badge&color=38bdf8&labelColor=080a10&label=PROFILE+VIEWS" alt="Profile Views" />
   &nbsp;
   <a href="https://github.com/sazzyrocks?tab=followers">
-    <img src="https://img.shields.io/github/followers/sazzyrocks?style=flat-square&color=a855f7&label=FOLLOWERS&logo=github" alt="Followers" />
+    <img src="https://img.shields.io/github/followers/sazzyrocks?style=for-the-badge&color=a855f7&labelColor=080a10&label=FOLLOWERS&logo=github&logoColor=white" alt="Followers" />
   </a>
   &nbsp;
   <a href="https://github.com/sazzyrocks?tab=repositories">
-    <img src="https://img.shields.io/github/stars/sazzyrocks?style=flat-square&color=f43f5e&label=STARS&logo=github" alt="Total Stars" />
+    <img src="https://img.shields.io/github/stars/sazzyrocks?style=for-the-badge&color=f43f5e&labelColor=080a10&label=STARS&logo=github&logoColor=white" alt="Total Stars" />
   </a>
 
 </div>

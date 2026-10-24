@@ -189,6 +189,59 @@
       margin-top: 18px;
     }
 
+    .counters-row {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: -8px 0 8px 0;
+    }
+
+    .now-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    .now-table td {
+      border: 1px solid var(--border-color);
+      padding: 10px 14px;
+    }
+
+    .now-table td:first-child {
+      width: 30%;
+      color: #f0f6fc;
+      font-weight: 600;
+      background: #161b22;
+    }
+
+    .pin-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .pin-grid a {
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .pin-grid a:hover {
+      transform: translateY(-3px);
+    }
+
+    .pin-grid img {
+      width: 100%;
+      display: block;
+    }
+
+    @media (max-width: 640px) {
+      .container { padding: 24px 16px; }
+      .pin-grid { grid-template-columns: 1fr; }
+    }
+
     .info-callout {
       margin-top: 36px;
       padding: 16px 20px;
@@ -225,12 +278,18 @@
 
     <!-- Social Badges -->
     <div class="badges-row">
-      <a href="#"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+      <a href="https://www.linkedin.com/in/sajal-p-786263325/" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
       <a href="https://x.com/SajalPorey27356" target="_blank"><img src="https://img.shields.io/badge/TWITTER-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter" /></a>
       <a href="https://portpolio-five-kappa.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/%E2%96%B2%20PORTFOLIO-7928CA?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
       <a href="mailto:sajal.porey20@gmail.com">
       <img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
+    </div>
+
+    <div class="counters-row">
+      <img src="https://komarev.com/ghpvc/?username=sazzyrocks&style=flat-square&color=38bdf8&label=PROFILE+VIEWS" alt="Profile Views" />
+      <img src="https://img.shields.io/github/followers/sazzyrocks?style=flat-square&color=a855f7&label=FOLLOWERS&logo=github" alt="Followers" />
+      <img src="https://img.shields.io/github/stars/sazzyrocks?style=flat-square&color=f43f5e&label=STARS&logo=github" alt="Total Stars" />
     </div>
 
     <hr>
@@ -253,6 +312,13 @@
 <span class="bracket">}</span>;</code></pre>
     </div>
 
+    <table class="now-table">
+      <tr><td>🔭 Working on</td><td>Solaris 3D, Repo-Doctor &amp; autonomous AI agents</td></tr>
+      <tr><td>🌱 Learning</td><td>System design, backend architecture &amp; advanced DSA</td></tr>
+      <tr><td>🤝 Open to</td><td>Internships, open-source contributions &amp; collaborations</td></tr>
+      <tr><td>💬 Ask me about</td><td>Three.js, MERN stack, C++ &amp; problem solving</td></tr>
+    </table>
+
     <hr>
 
     <h3>🛠️ Tech Stack & Skills</h3>
@@ -273,49 +339,17 @@
 
     <hr>
 
-    <h3>🌟 Featured Repositories</h3>
-    <table class="projects-table">
-      <thead>
-        <tr>
-          <th>Project</th>
-          <th>Description</th>
-          <th>Tech Stack</th>
-          <th>Link</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>🪐 <strong>Solaris 3D</strong></td>
-          <td>Interactive 3D Solar System explorer with real orbital mechanics & AI space guide</td>
-          <td>Three.js, GSAP, JS</td>
-          <td><a href="https://solar-system-5xjaei1jg-sajalporeys-projects.vercel.app" target="_blank">Live Demo</a> / <a href="https://github.com/sazzyrocks/solar-system" target="_blank">Repo</a></td>
-        </tr>
-        <tr>
-          <td>🌐 <strong>Interactive Portfolio</strong></td>
-          <td>Modern personal portfolio website showcasing 3D experiences, skills & projects</td>
-          <td>HTML5, CSS3, JS</td>
-          <td><a href="https://portpolio-five-kappa.vercel.app/" target="_blank">Live Demo</a></td>
-        </tr>
-        <tr>
-          <td>🛡️ <strong>VoiceShield-AI</strong></td>
-          <td>AI Voice Security & Shielding Platform</td>
-          <td>Python, AI/ML</td>
-          <td><a href="https://github.com/sazzyrocks/VoiceShield-AI" target="_blank">Repo</a></td>
-        </tr>
-        <tr>
-          <td>🩺 <strong>Repo-Doctor</strong></td>
-          <td>Instant repo health score, missing docs, security & CI/CD pipeline upgrade assistant</td>
-          <td>TypeScript, Node.js</td>
-          <td><a href="https://github.com/sazzyrocks/repo-doctor" target="_blank">Repo</a></td>
-        </tr>
-        <tr>
-          <td>⚖️ <strong>Legal Case Management</strong></td>
-          <td>Comprehensive MERN stack system for law firms to manage cases & clients securely</td>
-          <td>MongoDB, Express, React, Node</td>
-          <td><a href="https://github.com/sazzyrocks/legal_case_management" target="_blank">Repo</a></td>
-        </tr>
-      </tbody>
-    </table>
+    <h3>🌟 Featured Projects</h3>
+    <div class="pin-grid">
+      <a href="https://github.com/sazzyrocks/solar-system" target="_blank"><img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=sazzyrocks&repo=solar-system&theme=tokyonight&hide_border=true&bg_color=080a10&title_color=38bdf8&text_color=94a3b8&icon_color=a855f7" alt="Solaris 3D" /></a>
+      <a href="https://github.com/sazzyrocks/repo-doctor" target="_blank"><img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=sazzyrocks&repo=repo-doctor&theme=tokyonight&hide_border=true&bg_color=080a10&title_color=38bdf8&text_color=94a3b8&icon_color=a855f7" alt="Repo-Doctor" /></a>
+      <a href="https://github.com/sazzyrocks/legal_case_management" target="_blank"><img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=sazzyrocks&repo=legal_case_management&theme=tokyonight&hide_border=true&bg_color=080a10&title_color=38bdf8&text_color=94a3b8&icon_color=a855f7" alt="Legal Case Management" /></a>
+      <a href="https://github.com/sazzyrocks/portpolio" target="_blank"><img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=sazzyrocks&repo=portpolio&theme=tokyonight&hide_border=true&bg_color=080a10&title_color=38bdf8&text_color=94a3b8&icon_color=a855f7" alt="Interactive Portfolio" /></a>
+    </div>
+    <div class="badges-row">
+      <a href="https://solar-system-ivory-rho.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%AA%90%20SOLARIS%203D-LIVE%20DEMO-38bdf8?style=for-the-badge&labelColor=080a10" alt="Solaris 3D Live Demo" /></a>
+      <a href="https://portpolio-five-kappa.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%8C%90%20PORTFOLIO-LIVE%20DEMO-a855f7?style=for-the-badge&labelColor=080a10" alt="Portfolio Live Demo" /></a>
+    </div>
 
     <hr>
 
@@ -326,7 +360,18 @@
     </div>
 
     <div class="stats-row" style="margin-top: 14px;">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sazzyrocks&layout=compact&theme=tokyonight&hide_border=true&bg_color=080a10&title_color=38bdf8&text_color=94a3b8" alt="Top Languages" height="145" />
+      <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=sazzyrocks&layout=compact&theme=tokyonight&hide_border=true&bg_color=080a10&title_color=38bdf8&text_color=94a3b8" alt="Top Languages" height="145" />
+    </div>
+
+    <div class="stats-row" style="margin-top: 14px;">
+      <img src="https://github-readme-activity-graph-sigma.vercel.app/graph?username=sazzyrocks&theme=tokyo-night&hide_border=true&area=true&bg_color=080a10&color=38bdf8&line=a855f7&point=f43f5e&area_color=6366f1&custom_title=Contribution%20Activity" alt="Contribution Activity Graph" width="100%" />
+    </div>
+
+    <hr>
+
+    <h3>🏆 GitHub Trophies</h3>
+    <div class="stats-row">
+      <img src="https://github-trophies.vercel.app/?username=sazzyrocks&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6&margin-w=12" alt="GitHub Trophies" style="max-width: 100%;" />
     </div>
 
     <hr>
@@ -347,11 +392,13 @@
         </span>
         <span style="color: #8b949e;">Dots</span>
       </div>
-      <img src="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg?v=2" onerror="this.onerror=null; this.src='https://github-readme-activity-graph.vercel.app/graph?username=sazzyrocks&theme=tokyo-night&hide_border=true&area=true';" alt="Contribution Snake Animation" width="100%" />
+      <img src="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg?v=tokyonight" onerror="this.onerror=null; this.src='https://github-readme-activity-graph.vercel.app/graph?username=sazzyrocks&theme=tokyo-night&hide_border=true&area=true';" alt="Contribution Snake Animation" width="100%" />
       <p style="font-size: 12px; color: #8b949e; margin-top: 10px;">
         🎮 GitHub Actions me <code>.github/workflows/snake.yml</code> run hote hi ye live Tokyo Night cyberpunk snake ban jayega!
       </p>
     </div>
+
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,50:a855f7,100:38bdf8&height=110&section=footer&text=Thanks%20for%20visiting!&fontSize=22&fontColor=ffffff&fontAlignY=70" alt="Footer" width="100%" style="margin-top: 24px; display: block;" />
 
     <div class="info-callout">
       <strong>🚀 Ready to Deploy:</strong> Aap GitHub par ek nayi repository banayein jiska naam <code>sazzyrocks</code> ho (special profile repo), aur ye <code>README.md</code> aur <code>assets/</code> folder usme push kar dein!

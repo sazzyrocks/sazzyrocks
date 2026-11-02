@@ -213,7 +213,7 @@ I am a Computer Science engineer and creative technologist based in India. My wo
 <div align="center">
   <img src="https://github-readme-stats-fast.vercel.app/api?username=sazzyrocks&show_icons=true&include_all_commits=true&hide_rank=true&hide_border=true&bg_color=080B12&title_color=f97316&text_color=94a3b8&icon_color=f97316" alt="Sajal's GitHub Stats" height="165" />
   &nbsp;&nbsp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sazzyrocks&hide_border=true&background=080B12&ring=ea580c&fire=f97316&currStreakLabel=f97316&currStreakNum=e2e8f0&sideNums=e2e8f0&sideLabels=94a3b8&dates=64748b&stroke=1e293b&timezone=Asia/Kolkata" alt="Sajal's Streak" height="165" />
+  <img src="https://streak-stats.demolab.com/?user=sazzyrocks&hide_border=true&background=080B12&ring=ea580c&fire=f97316&currStreakLabel=f97316&currStreakNum=e2e8f0&sideNums=e2e8f0&sideLabels=94a3b8&dates=64748b&stroke=1e293b&timezone=Asia/Kolkata" alt="Sajal's Streak" height="165" />
 </div>
 
 <br/>

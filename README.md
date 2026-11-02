@@ -41,97 +41,28 @@
 
 ---
 
-### ✦ Architectural Philosophy & Focus
+### ✦ About & Core Focus
 
-> *"Designing at the nexus of spatial computation, mathematical rigor, and resilient backend systems."*
-
-I am a Computer Science engineer and creative technologist based in India. My work centers on **high-performance interactive 3D web experiences**, **scalable distributed systems**, and **autonomous agent frameworks**. I prioritize clean code architecture, algorithmic efficiency, and tactile UI/UX over cookie-cutter templates.
-
-<br/>
-
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h4>🪐 Creative 3D Web</h4>
-      <p>Building high-fidelity interactive graphics using Three.js, WebGL shaders, and GSAP timeline choreography.</p>
-    </td>
-    <td width="33%" valign="top">
-      <h4>⚡ Core Systems &amp; DSA</h4>
-      <p>Writing memory-efficient, performant solutions in C++ and Java with a deep foundation in algorithmic complexity.</p>
-    </td>
-    <td width="33%" valign="top">
-      <h4>🛡️ Intelligent Agents</h4>
-      <p>Architecting multi-agent workflows, real-time audio anomaly detection, and automated developer tooling.</p>
-    </td>
-  </tr>
-</table>
+> **Creative technologist & Computer Science engineer based in India.** Building at the intersection of **interactive 3D spatial web** (Three.js/WebGL), **performant backend systems** (C++/Java), and **autonomous AI agents**. Focused on algorithmic rigor, system scalability, and clean UI/UX craft.
 
 <br/>
 
 ---
 
-### ✦ Selected Engineering Works
+### ✦ Featured Engineering Projects
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🪐 Solaris 3D</h3>
-      <p><b>Interactive Celestial Engine &amp; Spatial WebGL Simulation</b></p>
-      <p>A real-time 3D planetary exploration engine featuring authentic celestial mechanics, procedural texture mapping, dynamic camera choreography, and responsive WebGL rendering with optimized draw calls.</p>
-      <p>
-        <code>Three.js</code> &bull; <code>WebGL</code> &bull; <code>GSAP</code> &bull; <code>Vite</code> &bull; <code>TailwindCSS</code>
-      </p>
-      <p>
-        <a href="https://solar-system-ivory-rho.vercel.app/" target="_blank"><b>Live Experience ↗</b></a> &nbsp;|&nbsp; 
-        <a href="https://github.com/sazzyrocks/solar-system" target="_blank"><b>Repository ↗</b></a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🛡️ VoiceShield AI</h3>
-      <p><b>Real-Time Audio Defense &amp; Agent Security Pipeline</b></p>
-      <p>An intelligent agent framework designed to mitigate synthetic voice fraud and deepfake impersonation. Streams audio through multi-stage acoustic spectrogram verification and behavioral heuristic layers.</p>
-      <p>
-        <code>Python</code> &bull; <code>AI Agents</code> &bull; <code>FastAPI</code> &bull; <code>Signal Processing</code>
-      </p>
-      <p>
-        <a href="https://github.com/sazzyrocks" target="_blank"><b>System Specs ↗</b></a> &nbsp;|&nbsp; 
-        <a href="https://github.com/sazzyrocks" target="_blank"><b>Architecture ↗</b></a>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🩺 Repo-Doctor</h3>
-      <p><b>Automated Code Hygiene &amp; AST Analysis CLI</b></p>
-      <p>Developer diagnostics engine that parses codebase ASTs, pinpoints breaking dependency shifts and security vulnerabilities, and orchestrates automated remediation pull requests across repositories.</p>
-      <p>
-        <code>TypeScript</code> &bull; <code>Node.js</code> &bull; <code>AST Parsing</code> &bull; <code>GitHub API</code>
-      </p>
-      <p>
-        <a href="https://github.com/sazzyrocks/repo-doctor" target="_blank"><b>Repository ↗</b></a> &nbsp;|&nbsp; 
-        <a href="https://github.com/sazzyrocks/repo-doctor" target="_blank"><b>Documentation ↗</b></a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>⚖️ Legal Case Management</h3>
-      <p><b>Enterprise Judicial Workflow &amp; Audit Platform</b></p>
-      <p>Full-scale case tracking system built for legal workflows, featuring role-based access control (RBAC), multi-tenant data isolation, immutable document audit trails, and high-concurrency REST endpoints.</p>
-      <p>
-        <code>React</code> &bull; <code>Node.js</code> &bull; <code>Express</code> &bull; <code>MongoDB</code> &bull; <code>JWT</code>
-      </p>
-      <p>
-        <a href="https://github.com/sazzyrocks/legal_case_management" target="_blank"><b>Repository ↗</b></a> &nbsp;|&nbsp; 
-        <a href="https://github.com/sazzyrocks/legal_case_management" target="_blank"><b>Schema Design ↗</b></a>
-      </p>
-    </td>
-  </tr>
-</table>
+| Project | Highlights & Capabilities | Tech Stack | Links |
+| :--- | :--- | :--- | :---: |
+| **🪐 Solaris 3D** | Interactive 3D celestial engine with real-time orbital physics & custom camera choreography | `Three.js` `WebGL` `GSAP` `Vite` | [Live Demo ↗](https://solar-system-ivory-rho.vercel.app/) &bull; [Source ↗](https://github.com/sazzyrocks/solar-system) |
+| **🛡️ VoiceShield AI** | Autonomous audio defense agent detecting synthetic deepfake voice patterns in real-time | `Python` `AI Agents` `FastAPI` | [Specs ↗](https://github.com/sazzyrocks) &bull; [Architecture ↗](https://github.com/sazzyrocks) |
+| **🩺 Repo-Doctor** | AST diagnostics CLI for automated repository dependency drift & vulnerability PR remediation | `TypeScript` `Node.js` `AST` | [Source ↗](https://github.com/sazzyrocks/repo-doctor) &bull; [Docs ↗](https://github.com/sazzyrocks/repo-doctor) |
+| **⚖️ Legal Case Mgmt** | Full-scale judicial workflow platform with multi-tenant RBAC & immutable audit logging | `React` `Node.js` `MongoDB` `JWT` | [Source ↗](https://github.com/sazzyrocks/legal_case_management) &bull; [Design ↗](https://github.com/sazzyrocks/legal_case_management) |
 
 <br/>
 
 ---
 
-### ✦ Technical Competency Matrix
+### ✦ Technical Stack & Competency
 
 <div align="center">
   <img src="https://img.shields.io/badge/C++20-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
@@ -161,48 +92,12 @@ I am a Computer Science engineer and creative technologist based in India. My wo
 
 <br/>
 
-<table>
-  <tr>
-    <th width="25%">Languages &amp; Core</th>
-    <th width="25%">Graphics &amp; Frontend</th>
-    <th width="25%">Backend &amp; Distributed</th>
-    <th width="25%">Data &amp; Infrastructure</th>
-  </tr>
-  <tr>
-    <td valign="top">
-      • C++ (STL, C++20)<br/>
-      • Java (OOP, Systems)<br/>
-      • Python 3<br/>
-      • TypeScript<br/>
-      • JavaScript (ESNext)<br/>
-      • SQL
-    </td>
-    <td valign="top">
-      • Three.js &amp; GSAP<br/>
-      • WebGL &amp; Canvas<br/>
-      • React.js<br/>
-      • Next.js<br/>
-      • Tailwind CSS<br/>
-      • Responsive UI/UX
-    </td>
-    <td valign="top">
-      • Node.js &amp; Express<br/>
-      • RESTful API Design<br/>
-      • System Architecture<br/>
-      • Concurrency &amp; Threads<br/>
-      • RBAC &amp; JWT Auth<br/>
-      • Agentic Workflows
-    </td>
-    <td valign="top">
-      • MongoDB<br/>
-      • MySQL<br/>
-      • Docker Containers<br/>
-      • Git &amp; GitHub Actions<br/>
-      • Linux CLI / Bash<br/>
-      • Postman &amp; Vite
-    </td>
-  </tr>
-</table>
+| Domain | Technologies & Core Tools |
+| :--- | :--- |
+| **Languages & Core** | C++ (STL, C++20), Java 17, Python 3, TypeScript, JavaScript (ESNext), SQL |
+| **3D Web & Frontend** | Three.js, WebGL Shaders, GSAP Timeline, React.js, Next.js, Tailwind CSS |
+| **Backend & Architecture** | Node.js, Express.js, RESTful Architecture, Concurrency, RBAC & JWT, AI Agents |
+| **Data & Infrastructure** | MongoDB, MySQL, Docker, Linux CLI / Bash, Git & GitHub Actions, Postman |
 
 <br/>
 

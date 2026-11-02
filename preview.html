@@ -19,7 +19,7 @@
       --text-muted: #8b949e;
       --accent-orange: #f97316;
       --accent-glow: rgba(249, 115, 22, 0.15);
-      --code-bg: rgba(110, 118, 129, 0.1);
+      --code-bg: rgba(110, 118, 129, 0.15);
     }
 
     * {
@@ -32,8 +32,8 @@
       background-color: var(--bg-canvas);
       color: var(--text-main);
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.65;
-      padding: 40px 20px;
+      line-height: 1.6;
+      padding: 30px 16px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -42,15 +42,15 @@
 
     .preview-wrapper {
       width: 100%;
-      max-width: 940px;
+      max-width: 920px;
     }
 
     .top-toolbar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 18px;
-      padding: 12px 20px;
+      margin-bottom: 16px;
+      padding: 10px 18px;
       background: var(--card-bg);
       border: 1px solid var(--border-color);
       border-radius: 12px;
@@ -95,16 +95,16 @@
     .container {
       background: var(--card-bg);
       border: 1px solid var(--border-color);
-      border-radius: 16px;
-      padding: 42px 48px;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+      border-radius: 14px;
+      padding: 32px 36px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
     }
 
     .banner-preview {
-      margin-bottom: 24px;
-      border-radius: 16px;
+      margin-bottom: 20px;
+      border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     }
 
     .banner-preview object, .banner-preview img {
@@ -116,9 +116,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
-      margin: 20px 0 16px 0;
+      margin: 16px 0 14px 0;
     }
 
     .badges-row a {
@@ -127,142 +127,114 @@
     }
 
     .badges-row a:hover {
-      transform: translateY(-2.5px);
+      transform: translateY(-2px);
     }
 
     .counters-row {
       display: flex;
       justify-content: center;
-      gap: 10px;
+      gap: 8px;
       flex-wrap: wrap;
-      margin: 8px 0 24px 0;
+      margin: 6px 0 18px 0;
     }
 
     hr {
       border: 0;
       height: 1px;
       background: var(--border-subtle);
-      margin: 36px 0;
+      margin: 28px 0;
     }
 
     h3 {
-      font-size: 1.35rem;
+      font-size: 1.25rem;
       font-weight: 700;
       color: var(--text-white);
-      margin-bottom: 18px;
+      margin-bottom: 14px;
       display: flex;
       align-items: center;
-      gap: 10px;
-      letter-spacing: -0.3px;
-    }
-
-    h4 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--text-white);
-      margin-bottom: 8px;
+      gap: 8px;
+      letter-spacing: -0.2px;
     }
 
     blockquote {
       background: rgba(249, 115, 22, 0.05);
       border-left: 3px solid var(--accent-orange);
-      padding: 14px 20px;
+      padding: 12px 18px;
       border-radius: 0 8px 8px 0;
-      margin: 16px 0 20px 0;
-      font-size: 15px;
-      color: #e2e8f0;
-      font-style: italic;
+      margin: 14px 0 18px 0;
+      font-size: 14px;
+      color: #cbd5e1;
+      line-height: 1.6;
     }
 
     blockquote strong {
-      color: var(--accent-orange);
-      font-style: normal;
-    }
-
-    .philosophy-text {
-      font-size: 15px;
-      color: #94a3b8;
-      line-height: 1.7;
-      margin-bottom: 24px;
-    }
-
-    .philosophy-text strong {
       color: var(--text-white);
     }
 
-    /* Structured Tables */
-    .showcase-table {
+    /* High-Density Compact Table */
+    .compact-table {
       width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      margin: 18px 0;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 13.5px;
       border: 1px solid var(--border-color);
-      border-radius: 10px;
+      border-radius: 8px;
       overflow: hidden;
-      font-size: 14px;
     }
 
-    .showcase-table th {
+    .compact-table th {
       background: var(--card-sub);
       color: var(--text-white);
       font-weight: 600;
-      padding: 12px 16px;
+      padding: 10px 14px;
       border-bottom: 1px solid var(--border-color);
       text-align: left;
+      font-size: 12.5px;
+      letter-spacing: 0.3px;
     }
 
-    .showcase-table td {
+    .compact-table td {
       border-bottom: 1px solid var(--border-color);
-      border-right: 1px solid var(--border-color);
-      padding: 18px 20px;
-      vertical-align: top;
-      background: rgba(13, 17, 23, 0.4);
+      padding: 10px 14px;
+      vertical-align: middle;
+      color: #94a3b8;
+      background: rgba(13, 17, 23, 0.3);
     }
 
-    .showcase-table tr:last-child td {
+    .compact-table tr:last-child td {
       border-bottom: none;
     }
 
-    .showcase-table tr td:last-child {
-      border-right: none;
+    .compact-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
     }
 
-    .showcase-table h3 {
-      font-size: 1.15rem;
-      margin-bottom: 6px;
-    }
-
-    .showcase-table p {
-      margin-bottom: 10px;
-      color: #94a3b8;
-      line-height: 1.55;
-    }
-
-    .showcase-table p b {
+    .compact-table b {
       color: var(--text-white);
-      font-size: 13.5px;
+      font-weight: 600;
     }
 
-    .showcase-table code {
+    .compact-table code {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 11.5px;
+      font-size: 11px;
       background: var(--code-bg);
       color: #e2e8f0;
-      padding: 2px 7px;
+      padding: 2px 6px;
       border-radius: 4px;
       border: 1px solid rgba(255, 255, 255, 0.08);
-      margin-right: 2px;
+      white-space: nowrap;
     }
 
-    .showcase-table a {
+    .compact-table a {
       color: var(--accent-orange);
       text-decoration: none;
       font-weight: 600;
-      font-size: 13px;
+      font-size: 12.5px;
+      white-space: nowrap;
       transition: color 0.15s ease;
     }
 
-    .showcase-table a:hover {
+    .compact-table a:hover {
       text-decoration: underline;
       color: #fb923c;
     }
@@ -270,52 +242,46 @@
     .skills-header-badges {
       display: flex;
       justify-content: center;
-      gap: 8px;
+      gap: 6px;
       flex-wrap: wrap;
-      margin-bottom: 16px;
-    }
-
-    .skills-matrix td {
-      line-height: 1.8;
-      color: #cbd5e1;
-      font-size: 13.5px;
+      margin-bottom: 14px;
     }
 
     .stats-row {
       display: flex;
       justify-content: center;
-      gap: 16px;
+      gap: 14px;
       flex-wrap: wrap;
-      margin: 20px 0;
+      margin: 18px 0;
     }
 
     .snake-card {
       background: #080b12;
       border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 18px;
+      border-radius: 10px;
+      padding: 14px;
       text-align: center;
-      margin: 24px 0;
+      margin: 20px 0;
     }
 
     .footer-section {
       text-align: center;
-      margin-top: 36px;
-      padding-top: 20px;
+      margin-top: 28px;
+      padding-top: 14px;
     }
 
     .footer-section p {
-      font-size: 15px;
+      font-size: 14px;
       color: var(--text-white);
-      margin-bottom: 12px;
+      margin-bottom: 8px;
     }
 
     .footer-links a {
       color: var(--accent-orange);
       text-decoration: none;
       font-weight: 600;
-      font-size: 14px;
-      margin: 0 10px;
+      font-size: 13px;
+      margin: 0 8px;
     }
 
     .footer-links a:hover {
@@ -324,33 +290,30 @@
 
     .footer-spec {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 16px;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
+      font-size: 10.5px;
       color: var(--text-muted);
-      letter-spacing: 1.5px;
+      letter-spacing: 1.2px;
     }
 
     .design-note {
-      margin-top: 24px;
-      padding: 16px 20px;
+      margin-top: 20px;
+      padding: 12px 16px;
       background: rgba(249, 115, 22, 0.08);
       border: 1px solid rgba(249, 115, 22, 0.25);
-      border-radius: 10px;
-      font-size: 13.5px;
+      border-radius: 8px;
+      font-size: 13px;
       color: #e2e8f0;
       display: flex;
       align-items: center;
-      gap: 12px;
-    }
-
-    .design-note span {
-      font-size: 20px;
+      gap: 10px;
     }
 
     @media (max-width: 768px) {
-      .container { padding: 24px 18px; }
-      .showcase-table td { display: block; width: 100% !important; }
+      .container { padding: 20px 14px; }
+      .compact-table { font-size: 12px; }
+      .compact-table td, .compact-table th { padding: 8px 10px; }
     }
   </style>
 </head>
@@ -365,7 +328,7 @@
         </svg>
         <span class="user">sazzyrocks</span> / <span>README.md</span>
       </div>
-      <div class="tag-pill">UI/UX Redesign · Production Grade</div>
+      <div class="tag-pill">Compact · High Density UI</div>
     </div>
 
     <!-- Main Container Previewing the GitHub Profile -->
@@ -405,98 +368,71 @@
 
       <hr>
 
-      <!-- Architectural Philosophy & Focus -->
-      <h3>✦ Architectural Philosophy &amp; Focus</h3>
+      <!-- About & Core Focus -->
+      <h3>✦ About &amp; Core Focus</h3>
 
       <blockquote>
-        <strong>"Designing at the nexus of spatial computation, mathematical rigor, and resilient backend systems."</strong>
+        <strong>Creative technologist &amp; Computer Science engineer based in India.</strong> Building at the intersection of <strong>interactive 3D spatial web</strong> (Three.js/WebGL), <strong>performant backend systems</strong> (C++/Java), and <strong>autonomous AI agents</strong>. Focused on algorithmic rigor, system scalability, and clean UI/UX craft.
       </blockquote>
 
-      <p class="philosophy-text">
-        I am a Computer Science engineer and creative technologist based in India. My work centers on <strong>high-performance interactive 3D web experiences</strong>, <strong>scalable distributed systems</strong>, and <strong>autonomous agent frameworks</strong>. I prioritize clean code architecture, algorithmic efficiency, and tactile UI/UX over cookie-cutter templates.
-      </p>
+      <hr>
 
-      <table class="showcase-table">
-        <tr>
-          <td width="33%">
-            <h4>🪐 Creative 3D Web</h4>
-            <p>Building high-fidelity interactive graphics using Three.js, WebGL shaders, and GSAP timeline choreography.</p>
-          </td>
-          <td width="33%">
-            <h4>⚡ Core Systems &amp; DSA</h4>
-            <p>Writing memory-efficient, performant solutions in C++ and Java with a deep foundation in algorithmic complexity.</p>
-          </td>
-          <td width="33%">
-            <h4>🛡️ Intelligent Agents</h4>
-            <p>Architecting multi-agent workflows, real-time audio anomaly detection, and automated developer tooling.</p>
-          </td>
-        </tr>
+      <!-- Featured Engineering Projects -->
+      <h3>✦ Featured Engineering Projects</h3>
+
+      <table class="compact-table">
+        <thead>
+          <tr>
+            <th width="22%">Project</th>
+            <th width="44%">Highlights &amp; Capabilities</th>
+            <th width="20%">Tech Stack</th>
+            <th width="14%" style="text-align: center;">Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>🪐 Solaris 3D</b></td>
+            <td>Interactive 3D celestial engine with real-time orbital physics &amp; custom camera choreography</td>
+            <td><code>Three.js</code> <code>WebGL</code> <code>GSAP</code></td>
+            <td style="text-align: center;">
+              <a href="https://solar-system-ivory-rho.vercel.app/" target="_blank">Demo ↗</a> &bull; 
+              <a href="https://github.com/sazzyrocks/solar-system" target="_blank">Code ↗</a>
+            </td>
+          </tr>
+          <tr>
+            <td><b>🛡️ VoiceShield AI</b></td>
+            <td>Autonomous audio defense agent detecting synthetic deepfake voice patterns in real-time</td>
+            <td><code>Python</code> <code>AI Agents</code> <code>FastAPI</code></td>
+            <td style="text-align: center;">
+              <a href="https://github.com/sazzyrocks" target="_blank">Specs ↗</a> &bull; 
+              <a href="https://github.com/sazzyrocks" target="_blank">Arch ↗</a>
+            </td>
+          </tr>
+          <tr>
+            <td><b>🩺 Repo-Doctor</b></td>
+            <td>AST diagnostics CLI for automated repository dependency drift &amp; vulnerability PR remediation</td>
+            <td><code>TypeScript</code> <code>Node.js</code> <code>AST</code></td>
+            <td style="text-align: center;">
+              <a href="https://github.com/sazzyrocks/repo-doctor" target="_blank">Code ↗</a> &bull; 
+              <a href="https://github.com/sazzyrocks/repo-doctor" target="_blank">Docs ↗</a>
+            </td>
+          </tr>
+          <tr>
+            <td><b>⚖️ Legal Case Mgmt</b></td>
+            <td>Full-scale judicial workflow platform with multi-tenant RBAC &amp; immutable audit logging</td>
+            <td><code>React</code> <code>Node.js</code> <code>MongoDB</code></td>
+            <td style="text-align: center;">
+              <a href="https://github.com/sazzyrocks/legal_case_management" target="_blank">Code ↗</a> &bull; 
+              <a href="https://github.com/sazzyrocks/legal_case_management" target="_blank">Design ↗</a>
+            </td>
+          </tr>
+        </tbody>
       </table>
 
       <hr>
 
-      <!-- Featured Engineering Works -->
-      <h3>✦ Selected Engineering Works</h3>
-
-      <table class="showcase-table">
-        <tr>
-          <td width="50%">
-            <h3>🪐 Solaris 3D</h3>
-            <p><b>Interactive Celestial Engine &amp; Spatial WebGL Simulation</b></p>
-            <p>A real-time 3D planetary exploration engine featuring authentic celestial mechanics, procedural texture mapping, dynamic camera choreography, and responsive WebGL rendering with optimized draw calls.</p>
-            <p>
-              <code>Three.js</code> <code>WebGL</code> <code>GSAP</code> <code>Vite</code> <code>TailwindCSS</code>
-            </p>
-            <p>
-              <a href="https://solar-system-ivory-rho.vercel.app/" target="_blank">Live Experience ↗</a> &nbsp;|&nbsp; 
-              <a href="https://github.com/sazzyrocks/solar-system" target="_blank">Repository ↗</a>
-            </p>
-          </td>
-          <td width="50%">
-            <h3>🛡️ VoiceShield AI</h3>
-            <p><b>Real-Time Audio Defense &amp; Agent Security Pipeline</b></p>
-            <p>An intelligent agent framework designed to mitigate synthetic voice fraud and deepfake impersonation. Streams audio through multi-stage acoustic spectrogram verification and behavioral heuristic layers.</p>
-            <p>
-              <code>Python</code> <code>AI Agents</code> <code>FastAPI</code> <code>Signal Processing</code>
-            </p>
-            <p>
-              <a href="https://github.com/sazzyrocks" target="_blank">System Specs ↗</a> &nbsp;|&nbsp; 
-              <a href="https://github.com/sazzyrocks" target="_blank">Architecture ↗</a>
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%">
-            <h3>🩺 Repo-Doctor</h3>
-            <p><b>Automated Code Hygiene &amp; AST Analysis CLI</b></p>
-            <p>Developer diagnostics engine that parses codebase ASTs, pinpoints breaking dependency shifts and security vulnerabilities, and orchestrates automated remediation pull requests across repositories.</p>
-            <p>
-              <code>TypeScript</code> <code>Node.js</code> <code>AST Parsing</code> <code>GitHub API</code>
-            </p>
-            <p>
-              <a href="https://github.com/sazzyrocks/repo-doctor" target="_blank">Repository ↗</a> &nbsp;|&nbsp; 
-              <a href="https://github.com/sazzyrocks/repo-doctor" target="_blank">Documentation ↗</a>
-            </p>
-          </td>
-          <td width="50%">
-            <h3>⚖️ Legal Case Management</h3>
-            <p><b>Enterprise Judicial Workflow &amp; Audit Platform</b></p>
-            <p>Full-scale case tracking system built for legal workflows, featuring role-based access control (RBAC), multi-tenant data isolation, immutable document audit trails, and high-concurrency REST endpoints.</p>
-            <p>
-              <code>React</code> <code>Node.js</code> <code>Express</code> <code>MongoDB</code> <code>JWT</code>
-            </p>
-            <p>
-              <a href="https://github.com/sazzyrocks/legal_case_management" target="_blank">Repository ↗</a> &nbsp;|&nbsp; 
-              <a href="https://github.com/sazzyrocks/legal_case_management" target="_blank">Schema Design ↗</a>
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      <hr>
-
-      <!-- Technical Competency Matrix -->
-      <h3>✦ Technical Competency Matrix</h3>
+      <!-- Technical Stack & Competency -->
+      <h3>✦ Technical Stack &amp; Competency</h3>
 
       <div class="skills-header-badges">
         <img src="https://img.shields.io/badge/C++20-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
@@ -513,47 +449,31 @@
         <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
       </div>
 
-      <table class="showcase-table skills-matrix">
-        <tr>
-          <th width="25%">Languages &amp; Core</th>
-          <th width="25%">Graphics &amp; Frontend</th>
-          <th width="25%">Backend &amp; Distributed</th>
-          <th width="25%">Data &amp; Infrastructure</th>
-        </tr>
-        <tr>
-          <td>
-            • C++ (STL, C++20)<br/>
-            • Java (OOP, Systems)<br/>
-            • Python 3<br/>
-            • TypeScript<br/>
-            • JavaScript (ESNext)<br/>
-            • SQL
-          </td>
-          <td>
-            • Three.js &amp; GSAP<br/>
-            • WebGL &amp; Canvas<br/>
-            • React.js<br/>
-            • Next.js<br/>
-            • Tailwind CSS<br/>
-            • Responsive UI/UX
-          </td>
-          <td>
-            • Node.js &amp; Express<br/>
-            • RESTful API Design<br/>
-            • System Architecture<br/>
-            • Concurrency &amp; Threads<br/>
-            • RBAC &amp; JWT Auth<br/>
-            • Agentic Workflows
-          </td>
-          <td>
-            • MongoDB<br/>
-            • MySQL<br/>
-            • Docker Containers<br/>
-            • Git &amp; GitHub Actions<br/>
-            • Linux CLI / Bash<br/>
-            • Postman &amp; Vite
-          </td>
-        </tr>
+      <table class="compact-table">
+        <thead>
+          <tr>
+            <th width="28%">Domain</th>
+            <th width="72%">Technologies &amp; Core Tools</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Languages &amp; Core</b></td>
+            <td>C++ (STL, C++20), Java 17, Python 3, TypeScript, JavaScript (ESNext), SQL</td>
+          </tr>
+          <tr>
+            <td><b>3D Web &amp; Frontend</b></td>
+            <td>Three.js, WebGL Shaders, GSAP Timeline, React.js, Next.js, Tailwind CSS</td>
+          </tr>
+          <tr>
+            <td><b>Backend &amp; Architecture</b></td>
+            <td>Node.js, Express.js, RESTful Architecture, Concurrency, RBAC &amp; JWT, AI Agents</td>
+          </tr>
+          <tr>
+            <td><b>Data &amp; Infrastructure</b></td>
+            <td>MongoDB, MySQL, Docker, Linux CLI / Bash, Git &amp; GitHub Actions, Postman</td>
+          </tr>
+        </tbody>
       </table>
 
       <hr>
@@ -562,8 +482,8 @@
       <h3>✦ GitHub Telemetry &amp; Activity</h3>
 
       <div class="stats-row">
-        <img src="https://github-readme-stats-fast.vercel.app/api?username=sazzyrocks&show_icons=true&include_all_commits=true&hide_rank=true&hide_border=true&bg_color=080B12&title_color=f97316&text_color=94a3b8&icon_color=f97316" alt="Stats" height="165" />
-        <img src="https://streak-stats.demolab.com/?user=sazzyrocks&hide_border=true&background=080B12&ring=ea580c&fire=f97316&currStreakLabel=f97316&currStreakNum=e2e8f0&sideNums=e2e8f0&sideLabels=94a3b8&dates=64748b&stroke=1e293b&timezone=Asia/Kolkata" alt="Streak" height="165" />
+        <img src="https://github-readme-stats-fast.vercel.app/api?username=sazzyrocks&show_icons=true&include_all_commits=true&hide_rank=true&hide_border=true&bg_color=080B12&title_color=f97316&text_color=94a3b8&icon_color=f97316" alt="Stats" height="155" />
+        <img src="https://streak-stats.demolab.com/?user=sazzyrocks&hide_border=true&background=080B12&ring=ea580c&fire=f97316&currStreakLabel=f97316&currStreakNum=e2e8f0&sideNums=e2e8f0&sideLabels=94a3b8&dates=64748b&stroke=1e293b&timezone=Asia/Kolkata" alt="Streak" height="155" />
       </div>
 
       <div class="snake-card">
@@ -593,9 +513,9 @@
 
     <!-- Live deployment notice -->
     <div class="design-note">
-      <span>✨</span>
+      <span>⚡</span>
       <div>
-        <strong>UI/UX Upgrade Complete:</strong> Completely eliminated generic AI typing widgets, fake JS objects, rainbow badge walls, and broken trophy widgets. Replaced with bespoke SVG HUD graphics, architectural case study cards, and precision typography.
+        <strong>Compact &amp; Ultra-Scannable:</strong> Reduced height by over 60%. Projects and skills are now rendered in a high-density, horizontal table matrix that fits cleanly in the viewport without endless vertical scrolling.
       </div>
     </div>
   </div>

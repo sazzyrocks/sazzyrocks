@@ -132,27 +132,78 @@ I am a Computer Science engineer and creative technologist based in India. My wo
 ---
 
 
-### 🛠️ Tech Stack & Skills
+### ✦ Technical Competency Matrix
 
 <div align="center">
-
-  **Languages**  
-  <br/>
-  <img src="https://skillicons.dev/icons?i=c,cpp,java,py,js,ts,html,css&perline=8" alt="Languages" />
-  
-  <br/><br/>
-
-  **Frameworks, Libraries & 3D**  
-  <br/>
-  <img src="https://skillicons.dev/icons?i=react,nodejs,express,tailwind,threejs,bootstrap" alt="Frameworks" />
-
-  <br/><br/>
-
-  **Databases, DevOps & Tools**  
-  <br/>
-  <img src="https://skillicons.dev/icons?i=mongodb,mysql,git,github,docker,linux,vscode,postman" alt="Tools" />
-
+  <img src="https://img.shields.io/badge/C++20-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Python_3-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/WebGL-990000?style=flat-square&logo=webgl&logoColor=white" alt="WebGL" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+  &nbsp;
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
 </div>
+
+<br/>
+
+<table>
+  <tr>
+    <th width="25%">Languages &amp; Core</th>
+    <th width="25%">Graphics &amp; Frontend</th>
+    <th width="25%">Backend &amp; Distributed</th>
+    <th width="25%">Data &amp; Infrastructure</th>
+  </tr>
+  <tr>
+    <td valign="top">
+      • C++ (STL, C++20)<br/>
+      • Java (OOP, Systems)<br/>
+      • Python 3<br/>
+      • TypeScript<br/>
+      • JavaScript (ESNext)<br/>
+      • SQL
+    </td>
+    <td valign="top">
+      • Three.js &amp; GSAP<br/>
+      • WebGL &amp; Canvas<br/>
+      • React.js<br/>
+      • Next.js<br/>
+      • Tailwind CSS<br/>
+      • Responsive UI/UX
+    </td>
+    <td valign="top">
+      • Node.js &amp; Express<br/>
+      • RESTful API Design<br/>
+      • System Architecture<br/>
+      • Concurrency &amp; Threads<br/>
+      • RBAC &amp; JWT Auth<br/>
+      • Agentic Workflows
+    </td>
+    <td valign="top">
+      • MongoDB<br/>
+      • MySQL<br/>
+      • Docker Containers<br/>
+      • Git &amp; GitHub Actions<br/>
+      • Linux CLI / Bash<br/>
+      • Postman &amp; Vite
+    </td>
+  </tr>
+</table>
 
 <br/>
 

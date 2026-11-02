@@ -1,45 +1,38 @@
 <div align="center">
 
-  <!-- Animated Header Banner -->
-  <img src="./assets/header.svg" alt="Sajal Porey Banner" width="100%" />
+  <!-- Bespoke Engineering Hero Banner -->
+  <img src="./assets/header.svg" alt="Sajal Porey - Hero Banner" width="100%" />
 
   <br/><br/>
 
-  <!-- Dynamic Typing Subtitle -->
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1200&color=FB923C&center=true&vCenter=true&width=620&lines=%F0%9F%91%8B+Hey%2C+I'm+Sajal+Porey!;%F0%9F%AA%90+Building+Solaris+3D+Interactive+Experiences;%F0%9F%9B%A1%EF%B8%8F+Architecting+VoiceShield-AI+Agent+Systems;%E2%9A%A1+Passionate+about+DSA+%26+Backend+Architecture;%F0%9F%92%BB+C%2B%2B+%E2%80%A2+Java+%E2%80%A2+Python+%E2%80%A2+TypeScript+%E2%80%A2+React" alt="Typing SVG" />
+  <!-- Curated Quick Navigation & Social Badges -->
+  <a href="https://portpolio-five-kappa.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-Live_Site-F97316?style=for-the-badge&logo=vercel&logoColor=white&labelColor=080B12" alt="Live Portfolio" />
   </a>
-
-  <br/><br/>
-
-  <!-- Social Badges (Clickable, Sunset Orange Style) -->
+  &nbsp;
   <a href="https://www.linkedin.com/in/sajal-p-786263325/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0c0805" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=080B12" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="https://x.com/SajalPorey27356" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter%20%2F%20X-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=0c0805" alt="Twitter / X" />
-  </a>
-  &nbsp;
-  <a href="https://portpolio-five-kappa.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/%E2%96%B2%20Portfolio-EA580C?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0c0805" alt="Portfolio" />
+    <img src="https://img.shields.io/badge/X_%2F_Twitter-Follow-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=080B12" alt="Twitter / X" />
   </a>
   &nbsp;
   <a href="mailto:sajal.porey20@gmail.com">
-    <img src="https://img.shields.io/badge/Get%20in%20Touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0c0805" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-Get_in_Touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=080B12" alt="Email" />
   </a>
 
   <br/><br/>
 
-  <!-- Profile Counters (Cohesive with Sunset Palette) -->
-  <img src="https://komarev.com/ghpvc/?username=sazzyrocks&style=for-the-badge&color=44403c&labelColor=0c0805&label=PROFILE+VIEWS" alt="Profile Views" />
-  &nbsp;
-  <a href="https://github.com/sazzyrocks?tab=followers">
-    <img src="https://img.shields.io/github/followers/sazzyrocks?style=for-the-badge&color=44403c&labelColor=0c0805&label=FOLLOWERS&logo=github&logoColor=white" alt="Followers" />
-  </a>
+  <!-- Minimalist Profile Telemetry -->
+  <img src="https://komarev.com/ghpvc/?username=sazzyrocks&style=flat-square&color=F97316&labelColor=0E131F&label=PROFILE+VIEWS" alt="Profile Views" />
   &nbsp;
   <a href="https://github.com/sazzyrocks?tab=repositories">
-    <img src="https://img.shields.io/github/stars/sazzyrocks?style=for-the-badge&color=44403c&labelColor=0c0805&label=STARS&logo=github&logoColor=white" alt="Total Stars" />
+    <img src="https://img.shields.io/github/stars/sazzyrocks?style=flat-square&color=38BDF8&labelColor=0E131F&label=STARS&logo=github&logoColor=white" alt="Stars" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/sazzyrocks?tab=followers">
+    <img src="https://img.shields.io/github/followers/sazzyrocks?style=flat-square&color=A855F7&labelColor=0E131F&label=FOLLOWERS&logo=github&logoColor=white" alt="Followers" />
   </a>
 
 </div>
@@ -48,44 +41,36 @@
 
 ---
 
-### ⚡ About Me
+### ✦ Architectural Philosophy & Focus
 
-```typescript
-const sajal = {
-    role:       "B.Tech CSE Student & Software Builder",
-    interests:  ["DSA & Problem Solving", "Backend Systems", "3D Web", "AI Agents"],
-    building:   [
-        "Solaris 3D (Interactive Three.js & GSAP Solar System)",
-        "VoiceShield-AI (AI Voice Security & Shield)",
-        "Repo-Doctor (GitHub Repo Health & Upgrade Tool)",
-        "Enterprise Legal & Project Management Systems"
-    ],
-    core_stack: ["C++", "Java", "Python", "JavaScript", "TypeScript", "React", "Node.js"],
-    location:   "India 🇮🇳",
-    fun_fact:   "Turning complex algorithms into interactive, production-grade applications 🚀"
-};
-```
+> *"Designing at the nexus of spatial computation, mathematical rigor, and resilient backend systems."*
+
+I am a Computer Science engineer and creative technologist based in India. My work centers on **high-performance interactive 3D web experiences**, **scalable distributed systems**, and **autonomous agent frameworks**. I prioritize clean code architecture, algorithmic efficiency, and tactile UI/UX over cookie-cutter templates.
+
+<br/>
 
 <table>
   <tr>
-    <td>🔭 <b>Working on</b></td>
-    <td>Solaris 3D, Repo-Doctor & autonomous AI agents</td>
-  </tr>
-  <tr>
-    <td>🌱 <b>Learning</b></td>
-    <td>System design, backend architecture & advanced DSA</td>
-  </tr>
-  <tr>
-    <td>🤝 <b>Open to</b></td>
-    <td>Internships, open-source contributions & collaborations</td>
-  </tr>
-  <tr>
-    <td>💬 <b>Ask me about</b></td>
-    <td>Three.js, MERN stack, C++ & problem solving</td>
+    <td width="33%" valign="top">
+      <h4>🪐 Creative 3D Web</h4>
+      <p>Building high-fidelity interactive graphics using Three.js, WebGL shaders, and GSAP timeline choreography.</p>
+    </td>
+    <td width="33%" valign="top">
+      <h4>⚡ Core Systems &amp; DSA</h4>
+      <p>Writing memory-efficient, performant solutions in C++ and Java with a deep foundation in algorithmic complexity.</p>
+    </td>
+    <td width="33%" valign="top">
+      <h4>🛡️ Intelligent Agents</h4>
+      <p>Architecting multi-agent workflows, real-time audio anomaly detection, and automated developer tooling.</p>
+    </td>
   </tr>
 </table>
 
 <br/>
+
+---
+
+### ✦ Selected Engineering Works
 
 ### 🛠️ Tech Stack & Skills
 

@@ -72,6 +72,66 @@ I am a Computer Science engineer and creative technologist based in India. My wo
 
 ### ✦ Selected Engineering Works
 
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🪐 Solaris 3D</h3>
+      <p><b>Interactive Celestial Engine &amp; Spatial WebGL Simulation</b></p>
+      <p>A real-time 3D planetary exploration engine featuring authentic celestial mechanics, procedural texture mapping, dynamic camera choreography, and responsive WebGL rendering with optimized draw calls.</p>
+      <p>
+        <code>Three.js</code> &bull; <code>WebGL</code> &bull; <code>GSAP</code> &bull; <code>Vite</code> &bull; <code>TailwindCSS</code>
+      </p>
+      <p>
+        <a href="https://solar-system-ivory-rho.vercel.app/" target="_blank"><b>Live Experience ↗</b></a> &nbsp;|&nbsp; 
+        <a href="https://github.com/sazzyrocks/solar-system" target="_blank"><b>Repository ↗</b></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🛡️ VoiceShield AI</h3>
+      <p><b>Real-Time Audio Defense &amp; Agent Security Pipeline</b></p>
+      <p>An intelligent agent framework designed to mitigate synthetic voice fraud and deepfake impersonation. Streams audio through multi-stage acoustic spectrogram verification and behavioral heuristic layers.</p>
+      <p>
+        <code>Python</code> &bull; <code>AI Agents</code> &bull; <code>FastAPI</code> &bull; <code>Signal Processing</code>
+      </p>
+      <p>
+        <a href="https://github.com/sazzyrocks" target="_blank"><b>System Specs ↗</b></a> &nbsp;|&nbsp; 
+        <a href="https://github.com/sazzyrocks" target="_blank"><b>Architecture ↗</b></a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🩺 Repo-Doctor</h3>
+      <p><b>Automated Code Hygiene &amp; AST Analysis CLI</b></p>
+      <p>Developer diagnostics engine that parses codebase ASTs, pinpoints breaking dependency shifts and security vulnerabilities, and orchestrates automated remediation pull requests across repositories.</p>
+      <p>
+        <code>TypeScript</code> &bull; <code>Node.js</code> &bull; <code>AST Parsing</code> &bull; <code>GitHub API</code>
+      </p>
+      <p>
+        <a href="https://github.com/sazzyrocks/repo-doctor" target="_blank"><b>Repository ↗</b></a> &nbsp;|&nbsp; 
+        <a href="https://github.com/sazzyrocks/repo-doctor" target="_blank"><b>Documentation ↗</b></a>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>⚖️ Legal Case Management</h3>
+      <p><b>Enterprise Judicial Workflow &amp; Audit Platform</b></p>
+      <p>Full-scale case tracking system built for legal workflows, featuring role-based access control (RBAC), multi-tenant data isolation, immutable document audit trails, and high-concurrency REST endpoints.</p>
+      <p>
+        <code>React</code> &bull; <code>Node.js</code> &bull; <code>Express</code> &bull; <code>MongoDB</code> &bull; <code>JWT</code>
+      </p>
+      <p>
+        <a href="https://github.com/sazzyrocks/legal_case_management" target="_blank"><b>Repository ↗</b></a> &nbsp;|&nbsp; 
+        <a href="https://github.com/sazzyrocks/legal_case_management" target="_blank"><b>Schema Design ↗</b></a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+---
+
+
 ### 🛠️ Tech Stack & Skills
 
 <div align="center">
@@ -92,35 +152,6 @@ I am a Computer Science engineer and creative technologist based in India. My wo
   <br/>
   <img src="https://skillicons.dev/icons?i=mongodb,mysql,git,github,docker,linux,vscode,postman" alt="Tools" />
 
-</div>
-
-<br/>
-
-### 🌟 Featured Projects
-
-<div align="center">
-  <a href="https://github.com/sazzyrocks/solar-system">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=sazzyrocks&repo=solar-system&theme=gruvbox&hide_border=true&bg_color=0c0805&title_color=f97316&text_color=d6d3d1&icon_color=f97316" alt="Solaris 3D" width="49%" />
-  </a>
-  <a href="https://github.com/sazzyrocks/repo-doctor">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=sazzyrocks&repo=repo-doctor&theme=gruvbox&hide_border=true&bg_color=0c0805&title_color=f97316&text_color=d6d3d1&icon_color=f97316" alt="Repo-Doctor" width="49%" />
-  </a>
-  <a href="https://github.com/sazzyrocks/legal_case_management">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=sazzyrocks&repo=legal_case_management&theme=gruvbox&hide_border=true&bg_color=0c0805&title_color=f97316&text_color=d6d3d1&icon_color=f97316" alt="Legal Case Management" width="49%" />
-  </a>
-  <a href="https://github.com/sazzyrocks/portpolio">
-    <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=sazzyrocks&repo=portpolio&theme=gruvbox&hide_border=true&bg_color=0c0805&title_color=f97316&text_color=d6d3d1&icon_color=f97316" alt="Interactive Portfolio" width="49%" />
-  </a>
-
-  <br/><br/>
-
-  <a href="https://solar-system-ivory-rho.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/%F0%9F%AA%90%20SOLARIS%203D-LIVE%20DEMO-292524?style=for-the-badge&logoColor=f97316&labelColor=0c0805" alt="Solaris 3D Live Demo" />
-  </a>
-  &nbsp;
-  <a href="https://portpolio-five-kappa.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/%F0%9F%8C%90%20PORTFOLIO-LIVE%20DEMO-292524?style=for-the-badge&labelColor=0c0805" alt="Portfolio Live Demo" />
-  </a>
 </div>
 
 <br/>

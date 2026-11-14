@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/header.svg" alt="Sajal Porey" width="100%" />
+  <img src="./assets/banner.svg" alt="Sajal Porey" width="100%" />
 </div>
 
 <p align="center">

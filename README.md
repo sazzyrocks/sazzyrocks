@@ -62,9 +62,9 @@ A full-stack web application for managing legal case workflows, users, and permi
 ## Contribution Activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake.svg">
-  <img alt="Sajal's GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/pacman-contribution-graph.svg">
+  <img alt="Sajal's Pac-Man Contribution Activity" src="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/pacman-contribution-graph-dark.svg" width="100%" />
 </picture>
 
 ## Find me online

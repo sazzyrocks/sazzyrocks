@@ -27,5 +27,5 @@
 
   <!-- Simple, elegant typography -->
   <text class="name" x="450" y="62" text-anchor="middle">Sajal Porey<tspan class="dot">.</tspan></text>
-  <text class="sub" x="450" y="90" text-anchor="middle">software developer <tspan class="sub-blue">/</tspan> builder</text>
+  <text class="sub" x="450" y="90" text-anchor="middle">full-stack <tspan class="sub-blue">&amp;</tspan> machine learning developer</text>
 </svg>

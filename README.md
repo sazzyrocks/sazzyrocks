@@ -12,9 +12,7 @@
 
 ## Hi, I'm Sajal
 
-I like building practical software and trying ideas that are a little outside the usual web app. Right now I'm most interested in AI and machine learning, especially tools that can work with real audio, documents, and developer workflows.
-
-I also enjoy making visual experiments. Solaris 3D is one of those projects.
+I like building practical software and trying ideas that solve real problems. Right now I'm focused on full-stack development, AI, and machine learning—especially systems that work with real audio, documents, and developer workflows.
 
 ## What I'm working on
 
@@ -41,25 +39,17 @@ A developer tool for finding dependency and repository issues. The goal is to ma
 
 ### Legal Case Management
 
-A web application for managing legal case workflows, users, and permissions. This project helped me think more carefully about roles, access control, and audit history.
+A full-stack web application for managing legal case workflows, users, and permissions. This project helped me think more carefully about roles, access control, and audit history.
 
 `React` `Node.js` `MongoDB`
 
 [Source code](https://github.com/sazzyrocks/legal_case_management)
 
-### Solaris 3D
-
-A small interactive solar system built with Three.js. I made it because I wanted to understand how motion, camera movement, and a little visual polish can change the way information feels.
-
-`Three.js` `WebGL` `GSAP`
-
-[Live demo](https://solar-system-ivory-rho.vercel.app/) | [Source code](https://github.com/sazzyrocks/solar-system)
-
 ## Tools I use
 
 **AI and data:** Python, machine learning, FastAPI
 
-**Web:** TypeScript, JavaScript, React, Node.js, Three.js
+**Web & Full-stack:** TypeScript, JavaScript, React, Node.js
 
 **Systems:** C++, Java, SQL, MongoDB, Docker, Linux
 
@@ -68,6 +58,14 @@ A small interactive solar system built with Three.js. I made it because I wanted
 - I learn best by building small, complete projects.
 - I care about whether a tool is actually useful, not just whether it looks impressive in a README.
 - I like clean interfaces, but I usually start with the underlying problem.
+
+## Contribution Activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake.svg">
+  <img alt="Sajal's GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg" width="100%" />
+</picture>
 
 ## Find me online
 

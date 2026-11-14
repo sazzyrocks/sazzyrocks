@@ -3,522 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sajal Porey (@sazzyrocks) - GitHub Profile Preview</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Sajal Porey | GitHub Profile Preview</title>
   <style>
-    :root {
-      --bg-canvas: #06090e;
-      --card-bg: #0d1117;
-      --card-sub: #161b22;
-      --border-color: #30363d;
-      --border-subtle: #21262d;
-      --text-main: #c9d1d9;
-      --text-white: #f0f6fc;
-      --text-muted: #8b949e;
-      --accent-orange: #f97316;
-      --accent-glow: rgba(249, 115, 22, 0.15);
-      --code-bg: rgba(110, 118, 129, 0.15);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: var(--bg-canvas);
-      color: var(--text-main);
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-      padding: 30px 16px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .preview-wrapper {
-      width: 100%;
-      max-width: 920px;
-    }
-
-    .top-toolbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 16px;
-      padding: 10px 18px;
-      background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 13px;
-    }
-
-    .repo-path {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--text-muted);
-    }
-
-    .repo-path .user {
-      color: var(--text-white);
-      font-weight: 600;
-    }
-
-    .tag-pill {
-      font-size: 11px;
-      font-weight: 600;
-      background: rgba(34, 197, 94, 0.12);
-      color: #4ade80;
-      border: 1px solid rgba(34, 197, 94, 0.25);
-      padding: 3px 12px;
-      border-radius: 9999px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .tag-pill::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #4ade80;
-      box-shadow: 0 0 8px #4ade80;
-    }
-
-    .container {
-      background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 14px;
-      padding: 32px 36px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
-    }
-
-    .banner-preview {
-      margin-bottom: 20px;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    }
-
-    .banner-preview object, .banner-preview img {
-      width: 100%;
-      display: block;
-    }
-
-    .badges-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin: 16px 0 14px 0;
-    }
-
-    .badges-row a {
-      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      display: inline-flex;
-    }
-
-    .badges-row a:hover {
-      transform: translateY(-2px);
-    }
-
-    .counters-row {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin: 6px 0 18px 0;
-    }
-
-    hr {
-      border: 0;
-      height: 1px;
-      background: var(--border-subtle);
-      margin: 28px 0;
-    }
-
-    h3 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--text-white);
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      letter-spacing: -0.2px;
-    }
-
-    blockquote {
-      background: rgba(249, 115, 22, 0.05);
-      border-left: 3px solid var(--accent-orange);
-      padding: 12px 18px;
-      border-radius: 0 8px 8px 0;
-      margin: 14px 0 18px 0;
-      font-size: 14px;
-      color: #cbd5e1;
-      line-height: 1.6;
-    }
-
-    blockquote strong {
-      color: var(--text-white);
-    }
-
-    /* High-Density Compact Table */
-    .compact-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 14px 0;
-      font-size: 13.5px;
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .compact-table th {
-      background: var(--card-sub);
-      color: var(--text-white);
-      font-weight: 600;
-      padding: 10px 14px;
-      border-bottom: 1px solid var(--border-color);
-      text-align: left;
-      font-size: 12.5px;
-      letter-spacing: 0.3px;
-    }
-
-    .compact-table td {
-      border-bottom: 1px solid var(--border-color);
-      padding: 10px 14px;
-      vertical-align: middle;
-      color: #94a3b8;
-      background: rgba(13, 17, 23, 0.3);
-    }
-
-    .compact-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .compact-table tr:hover td {
-      background: rgba(255, 255, 255, 0.02);
-    }
-
-    .compact-table b {
-      color: var(--text-white);
-      font-weight: 600;
-    }
-
-    .compact-table code {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
-      background: var(--code-bg);
-      color: #e2e8f0;
-      padding: 2px 6px;
-      border-radius: 4px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      white-space: nowrap;
-    }
-
-    .compact-table a {
-      color: var(--accent-orange);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 12.5px;
-      white-space: nowrap;
-      transition: color 0.15s ease;
-    }
-
-    .compact-table a:hover {
-      text-decoration: underline;
-      color: #fb923c;
-    }
-
-    .skills-header-badges {
-      display: flex;
-      justify-content: center;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-bottom: 14px;
-    }
-
-    .stats-row {
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin: 18px 0;
-    }
-
-    .snake-card {
-      background: #080b12;
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 14px;
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    .footer-section {
-      text-align: center;
-      margin-top: 28px;
-      padding-top: 14px;
-    }
-
-    .footer-section p {
-      font-size: 14px;
-      color: var(--text-white);
-      margin-bottom: 8px;
-    }
-
-    .footer-links a {
-      color: var(--accent-orange);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 13px;
-      margin: 0 8px;
-    }
-
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-
-    .footer-spec {
-      display: inline-block;
-      margin-top: 16px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 10.5px;
-      color: var(--text-muted);
-      letter-spacing: 1.2px;
-    }
-
-    .design-note {
-      margin-top: 20px;
-      padding: 12px 16px;
-      background: rgba(249, 115, 22, 0.08);
-      border: 1px solid rgba(249, 115, 22, 0.25);
-      border-radius: 8px;
-      font-size: 13px;
-      color: #e2e8f0;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    @media (max-width: 768px) {
-      .container { padding: 20px 14px; }
-      .compact-table { font-size: 12px; }
-      .compact-table td, .compact-table th { padding: 8px 10px; }
-    }
+    :root { --page: #f6f7f9; --paper: #fff; --ink: #1f2328; --muted: #59636e; --line: #d8dee4; --link: #0969da; --soft: #f1f3f5; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 32px 16px; background: var(--page); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
+    .page { max-width: 900px; margin: 0 auto; background: var(--paper); border: 1px solid var(--line); padding: 34px 42px 40px; }
+    .banner { margin: -34px -42px 24px; }
+    .banner img { display: block; width: 100%; }
+    nav { text-align: center; margin: 0 0 34px; color: var(--muted); }
+    nav a, a { color: var(--link); text-decoration: none; }
+    nav a:hover, a:hover { text-decoration: underline; }
+    h1, h2, h3 { color: var(--ink); line-height: 1.25; }
+    h1 { font-size: 28px; margin: 0 0 12px; }
+    h2 { font-size: 21px; border-bottom: 1px solid var(--line); padding-bottom: 8px; margin: 34px 0 18px; }
+    h3 { font-size: 17px; margin: 24px 0 6px; }
+    p { margin: 0 0 14px; }
+    ul { padding-left: 24px; margin-top: 8px; }
+    li { margin: 5px 0; }
+    code { background: var(--soft); padding: 2px 6px; font-size: 13px; }
+    .project-meta { color: var(--muted); font-size: 14px; }
+    .closing { text-align: center; color: var(--muted); margin: 36px 0 0; }
+    @media (max-width: 650px) { body { padding: 0; } .page { border: 0; padding: 22px 20px 30px; } .banner { margin: -22px -20px 22px; } }
   </style>
 </head>
 <body>
+  <main class="page">
+    <div class="banner"><img src="./assets/header.svg" alt="Sajal Porey"></div>
+    <nav>
+      <a href="https://portpolio-five-kappa.vercel.app/">Portfolio</a><span> | </span>
+      <a href="https://www.linkedin.com/in/sajal-p-786263325/">LinkedIn</a><span> | </span>
+      <a href="mailto:sajal.porey20@gmail.com">Email</a>
+    </nav>
 
-  <div class="preview-wrapper">
-    <!-- Top HUD Toolbar -->
-    <div class="top-toolbar">
-      <div class="repo-path">
-        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
-          <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-        </svg>
-        <span class="user">sazzyrocks</span> / <span>README.md</span>
-      </div>
-      <div class="tag-pill">Compact · High Density UI</div>
-    </div>
+    <h1>Hi, I'm Sajal</h1>
+    <p>I like building practical software and trying ideas that are a little outside the usual web app. Right now I'm most interested in AI and machine learning, especially tools that can work with real audio, documents, and developer workflows.</p>
+    <p>I also enjoy making visual experiments. Solaris 3D is one of those projects.</p>
 
-    <!-- Main Container Previewing the GitHub Profile -->
-    <div class="container">
-      
-      <!-- Custom SVG Banner -->
-      <div class="banner-preview">
-        <object type="image/svg+xml" data="./assets/header.svg" width="100%"></object>
-      </div>
+    <h2>What I'm working on</h2>
+    <ul>
+      <li>Exploring AI tools that are useful outside of a demo</li>
+      <li>Learning more about audio models, agents, and evaluation</li>
+      <li>Building small projects to understand systems by making them</li>
+      <li>Improving my fundamentals in backend development and machine learning</li>
+    </ul>
 
-      <!-- Quick Links / Badges -->
-      <div class="badges-row">
-        <a href="https://portpolio-five-kappa.vercel.app/" target="_blank">
-          <img src="https://img.shields.io/badge/Portfolio-Live_Site-F97316?style=for-the-badge&logo=vercel&logoColor=white&labelColor=080B12" alt="Live Portfolio" />
-        </a>
-        <a href="https://www.linkedin.com/in/sajal-p-786263325/" target="_blank">
-          <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=080B12" alt="LinkedIn" />
-        </a>
-        <a href="https://x.com/SajalPorey27356" target="_blank">
-          <img src="https://img.shields.io/badge/X_%2F_Twitter-Follow-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=080B12" alt="Twitter / X" />
-        </a>
-        <a href="mailto:sajal.porey20@gmail.com">
-          <img src="https://img.shields.io/badge/Email-Get_in_Touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=080B12" alt="Email" />
-        </a>
-      </div>
+    <h2>Selected projects</h2>
+    <h3>VoiceShield AI</h3>
+    <p>An experiment around detecting synthetic or manipulated voices. I'm using it to learn more about audio features, model behaviour, and how an AI tool should communicate its results.</p>
+    <p class="project-meta"><code>Python</code> <code>FastAPI</code> <code>machine learning</code></p>
 
-      <!-- Minimalist Stats -->
-      <div class="counters-row">
-        <img src="https://komarev.com/ghpvc/?username=sazzyrocks&style=flat-square&color=F97316&labelColor=0E131F&label=PROFILE+VIEWS" alt="Profile Views" />
-        <a href="https://github.com/sazzyrocks?tab=repositories">
-          <img src="https://img.shields.io/github/stars/sazzyrocks?style=flat-square&color=38BDF8&labelColor=0E131F&label=STARS&logo=github&logoColor=white" alt="Stars" />
-        </a>
-        <a href="https://github.com/sazzyrocks?tab=followers">
-          <img src="https://img.shields.io/github/followers/sazzyrocks?style=flat-square&color=A855F7&labelColor=0E131F&label=FOLLOWERS&logo=github&logoColor=white" alt="Followers" />
-        </a>
-      </div>
+    <h3>Repo-Doctor</h3>
+    <p>A developer tool for finding dependency and repository issues. The goal is to make maintenance work easier to understand and easier to fix.</p>
+    <p class="project-meta"><code>TypeScript</code> <code>Node.js</code> <code>ASTs</code></p>
+    <p><a href="https://github.com/sazzyrocks/repo-doctor">Source code</a></p>
 
-      <hr>
+    <h3>Legal Case Management</h3>
+    <p>A web application for managing legal case workflows, users, and permissions. This project helped me think more carefully about roles, access control, and audit history.</p>
+    <p class="project-meta"><code>React</code> <code>Node.js</code> <code>MongoDB</code></p>
+    <p><a href="https://github.com/sazzyrocks/legal_case_management">Source code</a></p>
 
-      <!-- About & Core Focus -->
-      <h3>✦ About &amp; Core Focus</h3>
+    <h3>Solaris 3D</h3>
+    <p>A small interactive solar system built with Three.js. I made it because I wanted to understand how motion, camera movement, and a little visual polish can change the way information feels.</p>
+    <p class="project-meta"><code>Three.js</code> <code>WebGL</code> <code>GSAP</code></p>
+    <p><a href="https://solar-system-ivory-rho.vercel.app/">Live demo</a> | <a href="https://github.com/sazzyrocks/solar-system">Source code</a></p>
 
-      <blockquote>
-        <strong>Creative technologist &amp; Computer Science engineer based in India.</strong> Building at the intersection of <strong>interactive 3D spatial web</strong> (Three.js/WebGL), <strong>performant backend systems</strong> (C++/Java), and <strong>autonomous AI agents</strong>. Focused on algorithmic rigor, system scalability, and clean UI/UX craft.
-      </blockquote>
+    <h2>Tools I use</h2>
+    <p><strong>AI and data:</strong> Python, machine learning, FastAPI</p>
+    <p><strong>Web:</strong> TypeScript, JavaScript, React, Node.js, Three.js</p>
+    <p><strong>Systems:</strong> C++, Java, SQL, MongoDB, Docker, Linux</p>
 
-      <hr>
+    <h2>A few things about me</h2>
+    <ul>
+      <li>I learn best by building small, complete projects.</li>
+      <li>I care about whether a tool is actually useful, not just whether it looks impressive in a README.</li>
+      <li>I like clean interfaces, but I usually start with the underlying problem.</li>
+    </ul>
 
-      <!-- Featured Engineering Projects -->
-      <h3>✦ Featured Engineering Projects</h3>
-
-      <table class="compact-table">
-        <thead>
-          <tr>
-            <th width="22%">Project</th>
-            <th width="44%">Highlights &amp; Capabilities</th>
-            <th width="20%">Tech Stack</th>
-            <th width="14%" style="text-align: center;">Links</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><b>🪐 Solaris 3D</b></td>
-            <td>Interactive 3D celestial engine with real-time orbital physics &amp; custom camera choreography</td>
-            <td><code>Three.js</code> <code>WebGL</code> <code>GSAP</code></td>
-            <td style="text-align: center;">
-              <a href="https://solar-system-ivory-rho.vercel.app/" target="_blank">Demo ↗</a> &bull; 
-              <a href="https://github.com/sazzyrocks/solar-system" target="_blank">Code ↗</a>
-            </td>
-          </tr>
-          <tr>
-            <td><b>🛡️ VoiceShield AI</b></td>
-            <td>Autonomous audio defense agent detecting synthetic deepfake voice patterns in real-time</td>
-            <td><code>Python</code> <code>AI Agents</code> <code>FastAPI</code></td>
-            <td style="text-align: center;">
-              <a href="https://github.com/sazzyrocks" target="_blank">Specs ↗</a> &bull; 
-              <a href="https://github.com/sazzyrocks" target="_blank">Arch ↗</a>
-            </td>
-          </tr>
-          <tr>
-            <td><b>🩺 Repo-Doctor</b></td>
-            <td>AST diagnostics CLI for automated repository dependency drift &amp; vulnerability PR remediation</td>
-            <td><code>TypeScript</code> <code>Node.js</code> <code>AST</code></td>
-            <td style="text-align: center;">
-              <a href="https://github.com/sazzyrocks/repo-doctor" target="_blank">Code ↗</a> &bull; 
-              <a href="https://github.com/sazzyrocks/repo-doctor" target="_blank">Docs ↗</a>
-            </td>
-          </tr>
-          <tr>
-            <td><b>⚖️ Legal Case Mgmt</b></td>
-            <td>Full-scale judicial workflow platform with multi-tenant RBAC &amp; immutable audit logging</td>
-            <td><code>React</code> <code>Node.js</code> <code>MongoDB</code></td>
-            <td style="text-align: center;">
-              <a href="https://github.com/sazzyrocks/legal_case_management" target="_blank">Code ↗</a> &bull; 
-              <a href="https://github.com/sazzyrocks/legal_case_management" target="_blank">Design ↗</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <hr>
-
-      <!-- Technical Stack & Competency -->
-      <h3>✦ Technical Stack &amp; Competency</h3>
-
-      <div class="skills-header-badges">
-        <img src="https://img.shields.io/badge/C++20-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
-        <img src="https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
-        <img src="https://img.shields.io/badge/Python_3-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
-        <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js" />
-        <img src="https://img.shields.io/badge/WebGL-990000?style=flat-square&logo=webgl&logoColor=white" alt="WebGL" />
-        <img src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
-        <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
-      </div>
-
-      <table class="compact-table">
-        <thead>
-          <tr>
-            <th width="28%">Domain</th>
-            <th width="72%">Technologies &amp; Core Tools</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><b>Languages &amp; Core</b></td>
-            <td>C++ (STL, C++20), Java 17, Python 3, TypeScript, JavaScript (ESNext), SQL</td>
-          </tr>
-          <tr>
-            <td><b>3D Web &amp; Frontend</b></td>
-            <td>Three.js, WebGL Shaders, GSAP Timeline, React.js, Next.js, Tailwind CSS</td>
-          </tr>
-          <tr>
-            <td><b>Backend &amp; Architecture</b></td>
-            <td>Node.js, Express.js, RESTful Architecture, Concurrency, RBAC &amp; JWT, AI Agents</td>
-          </tr>
-          <tr>
-            <td><b>Data &amp; Infrastructure</b></td>
-            <td>MongoDB, MySQL, Docker, Linux CLI / Bash, Git &amp; GitHub Actions, Postman</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <hr>
-
-      <!-- Telemetry & Activity -->
-      <h3>✦ GitHub Telemetry &amp; Activity</h3>
-
-      <div class="stats-row">
-        <img src="https://github-readme-stats-fast.vercel.app/api?username=sazzyrocks&show_icons=true&include_all_commits=true&hide_rank=true&hide_border=true&bg_color=080B12&title_color=f97316&text_color=94a3b8&icon_color=f97316" alt="Stats" height="155" />
-        <img src="https://streak-stats.demolab.com/?user=sazzyrocks&hide_border=true&background=080B12&ring=ea580c&fire=f97316&currStreakLabel=f97316&currStreakNum=e2e8f0&sideNums=e2e8f0&sideLabels=94a3b8&dates=64748b&stroke=1e293b&timezone=Asia/Kolkata" alt="Streak" height="155" />
-      </div>
-
-      <div class="snake-card">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake.svg">
-          <img alt="Sajal's GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg" width="100%" />
-        </picture>
-      </div>
-
-      <hr>
-
-      <!-- Footer -->
-      <div class="footer-section">
-        <p><strong>Let's build something extraordinary together.</strong></p>
-        <div class="footer-links">
-          <a href="https://portpolio-five-kappa.vercel.app/" target="_blank">Explore Interactive Portfolio ↗</a>
-          <a href="https://www.linkedin.com/in/sajal-p-786263325/" target="_blank">Connect on LinkedIn ↗</a>
-          <a href="mailto:sajal.porey20@gmail.com">Direct Email ↗</a>
-        </div>
-        <div class="footer-spec">
-          SYS.STABLE // LAT 22.57° N · LON 88.36° E // CRAFTED WITH PRECISION BY SAJAL POREY
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Live deployment notice -->
-    <div class="design-note">
-      <span>⚡</span>
-      <div>
-        <strong>Compact &amp; Ultra-Scannable:</strong> Reduced height by over 60%. Projects and skills are now rendered in a high-density, horizontal table matrix that fits cleanly in the viewport without endless vertical scrolling.
-      </div>
-    </div>
-  </div>
-
+    <h2>Find me online</h2>
+    <ul>
+      <li><a href="https://portpolio-five-kappa.vercel.app/">Portfolio</a></li>
+      <li><a href="https://www.linkedin.com/in/sajal-p-786263325/">LinkedIn</a></li>
+      <li><a href="mailto:sajal.porey20@gmail.com">Email</a></li>
+    </ul>
+    <p class="closing">Thanks for stopping by.</p>
+  </main>
 </body>
 </html>

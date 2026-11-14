@@ -1,138 +1,80 @@
 <div align="center">
-
-  <!-- Bespoke Engineering Hero Banner -->
-  <img src="./assets/header.svg" alt="Sajal Porey - Hero Banner" width="100%" />
-
-  <br/><br/>
-
-  <!-- Curated Quick Navigation & Social Badges -->
-  <a href="https://portpolio-five-kappa.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-Live_Site-F97316?style=for-the-badge&logo=vercel&logoColor=white&labelColor=080B12" alt="Live Portfolio" />
-  </a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/sajal-p-786263325/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=080B12" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://x.com/SajalPorey27356" target="_blank">
-    <img src="https://img.shields.io/badge/X_%2F_Twitter-Follow-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=080B12" alt="Twitter / X" />
-  </a>
-  &nbsp;
-  <a href="mailto:sajal.porey20@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Get_in_Touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=080B12" alt="Email" />
-  </a>
-
-  <br/><br/>
-
-  <!-- Minimalist Profile Telemetry -->
-  <img src="https://komarev.com/ghpvc/?username=sazzyrocks&style=flat-square&color=F97316&labelColor=0E131F&label=PROFILE+VIEWS" alt="Profile Views" />
-  &nbsp;
-  <a href="https://github.com/sazzyrocks?tab=repositories">
-    <img src="https://img.shields.io/github/stars/sazzyrocks?style=flat-square&color=38BDF8&labelColor=0E131F&label=STARS&logo=github&logoColor=white" alt="Stars" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/sazzyrocks?tab=followers">
-    <img src="https://img.shields.io/github/followers/sazzyrocks?style=flat-square&color=A855F7&labelColor=0E131F&label=FOLLOWERS&logo=github&logoColor=white" alt="Followers" />
-  </a>
-
+  <img src="./assets/header.svg" alt="Sajal Porey" width="100%" />
 </div>
 
-<br/>
+<p align="center">
+  <a href="https://portpolio-five-kappa.vercel.app/">Portfolio</a>
+  &nbsp; | &nbsp;
+  <a href="https://www.linkedin.com/in/sajal-p-786263325/">LinkedIn</a>
+  &nbsp; | &nbsp;
+  <a href="mailto:sajal.porey20@gmail.com">Email</a>
+</p>
 
----
+## Hi, I'm Sajal
 
-### ✦ About & Core Focus
+I like building practical software and trying ideas that are a little outside the usual web app. Right now I'm most interested in AI and machine learning, especially tools that can work with real audio, documents, and developer workflows.
 
-> **Creative technologist & Computer Science engineer based in India.** Building at the intersection of **interactive 3D spatial web** (Three.js/WebGL), **performant backend systems** (C++/Java), and **autonomous AI agents**. Focused on algorithmic rigor, system scalability, and clean UI/UX craft.
+I also enjoy making visual experiments. Solaris 3D is one of those projects.
 
-<br/>
+## What I'm working on
 
----
+- Exploring AI tools that are useful outside of a demo
+- Learning more about audio models, agents, and evaluation
+- Building small projects to understand systems by making them
+- Improving my fundamentals in backend development and machine learning
 
-### ✦ Featured Engineering Projects
+## Selected projects
 
-| Project | Highlights & Capabilities | Tech Stack | Links |
-| :--- | :--- | :--- | :---: |
-| **🪐 Solaris 3D** | Interactive 3D celestial engine with real-time orbital physics & custom camera choreography | `Three.js` `WebGL` `GSAP` `Vite` | [Live Demo ↗](https://solar-system-ivory-rho.vercel.app/) &bull; [Source ↗](https://github.com/sazzyrocks/solar-system) |
-| **🛡️ VoiceShield AI** | Autonomous audio defense agent detecting synthetic deepfake voice patterns in real-time | `Python` `AI Agents` `FastAPI` | [Specs ↗](https://github.com/sazzyrocks) &bull; [Architecture ↗](https://github.com/sazzyrocks) |
-| **🩺 Repo-Doctor** | AST diagnostics CLI for automated repository dependency drift & vulnerability PR remediation | `TypeScript` `Node.js` `AST` | [Source ↗](https://github.com/sazzyrocks/repo-doctor) &bull; [Docs ↗](https://github.com/sazzyrocks/repo-doctor) |
-| **⚖️ Legal Case Mgmt** | Full-scale judicial workflow platform with multi-tenant RBAC & immutable audit logging | `React` `Node.js` `MongoDB` `JWT` | [Source ↗](https://github.com/sazzyrocks/legal_case_management) &bull; [Design ↗](https://github.com/sazzyrocks/legal_case_management) |
+### VoiceShield AI
 
-<br/>
+An experiment around detecting synthetic or manipulated voices. I'm using it to learn more about audio features, model behaviour, and how an AI tool should communicate its results.
 
----
+`Python` `FastAPI` `machine learning`
 
-### ✦ Technical Stack & Competency
+### Repo-Doctor
 
-<div align="center">
-  <img src="https://img.shields.io/badge/C++20-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Python_3-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/WebGL-990000?style=flat-square&logo=webgl&logoColor=white" alt="WebGL" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
-</div>
+A developer tool for finding dependency and repository issues. The goal is to make maintenance work easier to understand and easier to fix.
 
-<br/>
+`TypeScript` `Node.js` `ASTs`
 
-| Domain | Technologies & Core Tools |
-| :--- | :--- |
-| **Languages & Core** | C++ (STL, C++20), Java 17, Python 3, TypeScript, JavaScript (ESNext), SQL |
-| **3D Web & Frontend** | Three.js, WebGL Shaders, GSAP Timeline, React.js, Next.js, Tailwind CSS |
-| **Backend & Architecture** | Node.js, Express.js, RESTful Architecture, Concurrency, RBAC & JWT, AI Agents |
-| **Data & Infrastructure** | MongoDB, MySQL, Docker, Linux CLI / Bash, Git & GitHub Actions, Postman |
+[Source code](https://github.com/sazzyrocks/repo-doctor)
 
-<br/>
+### Legal Case Management
 
----
+A web application for managing legal case workflows, users, and permissions. This project helped me think more carefully about roles, access control, and audit history.
 
-### ✦ GitHub Telemetry & Activity
+`React` `Node.js` `MongoDB`
 
-<div align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=sazzyrocks&show_icons=true&include_all_commits=true&hide_rank=true&hide_border=true&bg_color=080B12&title_color=f97316&text_color=94a3b8&icon_color=f97316" alt="Sajal's GitHub Stats" height="165" />
-  &nbsp;&nbsp;
-  <img src="https://streak-stats.demolab.com/?user=sazzyrocks&hide_border=true&background=080B12&ring=ea580c&fire=f97316&currStreakLabel=f97316&currStreakNum=e2e8f0&sideNums=e2e8f0&sideLabels=94a3b8&dates=64748b&stroke=1e293b&timezone=Asia/Kolkata" alt="Sajal's Streak" height="165" />
-</div>
+[Source code](https://github.com/sazzyrocks/legal_case_management)
 
-<br/>
+### Solaris 3D
 
-<!-- Interactive Contribution Grid Snake -->
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake.svg">
-    <img alt="Sajal's GitHub Contribution Grid Snake" src="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/github-contribution-grid-snake-dark.svg" width="100%" />
-  </picture>
-</div>
+A small interactive solar system built with Three.js. I made it because I wanted to understand how motion, camera movement, and a little visual polish can change the way information feels.
 
-<br/>
+`Three.js` `WebGL` `GSAP`
 
----
+[Live demo](https://solar-system-ivory-rho.vercel.app/) | [Source code](https://github.com/sazzyrocks/solar-system)
 
-<div align="center">
-  <br/>
-  <p><b>Let's build something extraordinary together.</b></p>
-  <a href="https://portpolio-five-kappa.vercel.app/" target="_blank"><b>Explore Interactive Portfolio ↗</b></a> &nbsp;&bull;&nbsp;
-  <a href="https://www.linkedin.com/in/sajal-p-786263325/" target="_blank"><b>Connect on LinkedIn ↗</b></a> &nbsp;&bull;&nbsp;
-  <a href="mailto:sajal.porey20@gmail.com"><b>Direct Email ↗</b></a>
-  <br/><br/>
-  <sub><code>SYS.STABLE // LAT 22.57° N · LON 88.36° E // CRAFTED WITH PRECISION BY SAJAL POREY</code></sub>
-  <br/><br/>
-</div>
+## Tools I use
+
+**AI and data:** Python, machine learning, FastAPI
+
+**Web:** TypeScript, JavaScript, React, Node.js, Three.js
+
+**Systems:** C++, Java, SQL, MongoDB, Docker, Linux
+
+## A few things about me
+
+- I learn best by building small, complete projects.
+- I care about whether a tool is actually useful, not just whether it looks impressive in a README.
+- I like clean interfaces, but I usually start with the underlying problem.
+
+## Find me online
+
+- [Portfolio](https://portpolio-five-kappa.vercel.app/)
+- [LinkedIn](https://www.linkedin.com/in/sajal-p-786263325/)
+- [Email](mailto:sajal.porey20@gmail.com)
+
+<p align="center">
+  Thanks for stopping by.
+</p>

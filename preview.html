@@ -5,93 +5,189 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sajal Porey | GitHub Profile Preview</title>
   <style>
-    :root { --page: #f6f7f9; --paper: #fff; --ink: #1f2328; --muted: #59636e; --line: #d8dee4; --link: #0969da; --soft: #f1f3f5; }
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --text-bright: #f0f6fc;
+      --text-muted: #8b949e;
+      --accent: #3b82f6;
+      --code-bg: #21262d;
+    }
     * { box-sizing: border-box; }
-    body { margin: 0; padding: 32px 16px; background: var(--page); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
-    .page { max-width: 900px; margin: 0 auto; background: var(--paper); border: 1px solid var(--line); padding: 34px 42px 40px; }
-    .banner { margin: -34px -42px 24px; }
+    body {
+      margin: 0;
+      padding: 30px 16px;
+      background: #010409;
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .page {
+      max-width: 880px;
+      margin: 0 auto;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 36px 44px;
+    }
+    .banner { margin: -36px -44px 24px; border-radius: 12px 12px 0 0; overflow: hidden; }
     .banner img { display: block; width: 100%; }
-    nav { text-align: center; margin: 0 0 34px; color: var(--muted); }
-    nav a, a { color: var(--link); text-decoration: none; }
+    nav { text-align: center; margin-bottom: 28px; font-size: 14px; }
+    nav a, a { color: var(--accent); text-decoration: none; font-weight: 500; }
     nav a:hover, a:hover { text-decoration: underline; }
-    h1, h2, h3 { color: var(--ink); line-height: 1.25; }
-    h1 { font-size: 28px; margin: 0 0 12px; }
-    h2 { font-size: 21px; border-bottom: 1px solid var(--line); padding-bottom: 8px; margin: 34px 0 18px; }
-    h3 { font-size: 17px; margin: 24px 0 6px; }
-    p { margin: 0 0 14px; }
-    ul { padding-left: 24px; margin-top: 8px; }
-    li { margin: 5px 0; }
-    code { background: var(--soft); padding: 2px 6px; font-size: 13px; }
-    .project-meta { color: var(--muted); font-size: 14px; }
-    .snake-box { margin: 20px 0; text-align: center; }
-    .snake-box img { max-width: 100%; height: auto; border-radius: 6px; }
-    .closing { text-align: center; color: var(--muted); margin: 36px 0 0; }
-    @media (max-width: 650px) { body { padding: 0; } .page { border: 0; padding: 22px 20px 30px; } .banner { margin: -22px -20px 22px; } }
+    h3 { font-size: 18px; color: var(--text-bright); margin: 24px 0 10px; font-weight: 600; }
+    h4 { font-size: 16px; color: var(--text-bright); margin: 0 0 6px; }
+    p { margin: 0 0 14px; font-size: 14.5px; }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 24px 0; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin: 6px 0; font-size: 14.5px; }
+    table { width: 100%; border-collapse: separate; border-spacing: 12px; margin: 10px -12px; }
+    td {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
+      vertical-align: top;
+    }
+    code {
+      background: var(--code-bg);
+      color: #93c5fd;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      padding: 3px 7px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    }
+    details {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-top: 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    details summary { color: var(--text-bright); outline: none; }
+    .snake-box { text-align: center; margin: 20px 0; }
+    .snake-box img { max-width: 100%; border-radius: 6px; }
+    footer { text-align: center; margin-top: 28px; font-size: 13px; color: var(--text-muted); }
+    @media (max-width: 680px) {
+      body { padding: 0; }
+      .page { border: 0; border-radius: 0; padding: 20px; }
+      .banner { margin: -20px -20px 20px; border-radius: 0; }
+      table, tr, td { display: block; width: 100%; margin: 8px 0; }
+    }
   </style>
 </head>
 <body>
   <main class="page">
-    <div class="banner"><img src="./assets/banner.svg" alt="Sajal Porey"></div>
+    <div class="banner">
+      <img src="./assets/banner.svg" alt="Sajal Porey - Full-Stack & Machine Learning Developer">
+    </div>
+
     <nav>
-      <a href="https://portpolio-five-kappa.vercel.app/">Portfolio</a><span> | </span>
-      <a href="https://www.linkedin.com/in/sajal-p-786263325/">LinkedIn</a><span> | </span>
-      <a href="mailto:sajal.porey20@gmail.com">Email</a>
+      <a href="https://portpolio-five-kappa.vercel.app/" target="_blank"><b>Portfolio</b></a>
+      &nbsp;•&nbsp;
+      <a href="https://www.linkedin.com/in/sajal-p-786263325/" target="_blank"><b>LinkedIn</b></a>
+      &nbsp;•&nbsp;
+      <a href="mailto:sajal.porey20@gmail.com"><b>Email</b></a>
     </nav>
 
-    <h1>Hi, I'm Sajal</h1>
-    <p>I like building practical software and trying ideas that solve real problems. Right now I'm focused on full-stack development, AI, and machine learning—especially systems that work with real audio, documents, and developer workflows.</p>
+    <h3>✦ Engineering at the intersection of applied machine learning and reliable full-stack architecture.</h3>
+    <p>I am a Computer Science engineer specializing in deep learning diagnostics, autonomous intelligent agents, and production web systems. I prioritize algorithmic rigor, verifiable real-world utility, and clean, modular codebase architecture over superficial templates.</p>
 
-    <h2>What I'm working on</h2>
+    <hr>
+
+    <h3>✦ What I'm Building</h3>
     <ul>
-      <li>Exploring AI tools that are useful outside of a demo</li>
-      <li>Learning more about audio models, agents, and evaluation</li>
-      <li>Building small projects to understand systems by making them</li>
-      <li>Improving my fundamentals in backend development and machine learning</li>
+      <li>🧬 <b>Biomedical Machine Learning:</b> Real-time signal processing and computer vision pipelines for clinical diagnostics (ECG &amp; X-ray).</li>
+      <li>🤖 <b>Intelligent Agent Systems:</b> Autonomous agents for financial synthesis, AST code refactoring, and multi-modal intelligence.</li>
+      <li>⚡ <b>Scalable Distributed Web:</b> Low-latency backend APIs with resilient schema designs, strict RBAC, and containerized deployment.</li>
     </ul>
 
-    <h2>Selected projects</h2>
-    <h3>VoiceShield AI</h3>
-    <p>An experiment around detecting synthetic or manipulated voices. I'm using it to learn more about audio features, model behaviour, and how an AI tool should communicate its results.</p>
-    <p class="project-meta"><code>Python</code> <code>FastAPI</code> <code>machine learning</code></p>
+    <hr>
 
-    <h3>Repo-Doctor</h3>
-    <p>A developer tool for finding dependency and repository issues. The goal is to make maintenance work easier to understand and easier to fix.</p>
-    <p class="project-meta"><code>TypeScript</code> <code>Node.js</code> <code>ASTs</code></p>
-    <p><a href="https://github.com/sazzyrocks/repo-doctor">Source code</a></p>
+    <h3>✦ Featured Engineering Projects</h3>
+    <table>
+      <tr>
+        <td width="50%">
+          <h4>🩺 VitalEdge</h4>
+          <p>Real-time cardiac arrhythmia detection pipeline processing streaming ECG telemetry to automate emergency risk prioritization.</p>
+          <p><code>PyTorch</code> <code>Signal-DSP</code> <code>FastAPI</code></p>
+          <p><a href="https://github.com/sazzyrocks/VitalEdge"><b>Explore Project ↗</b></a></p>
+        </td>
+        <td width="50%">
+          <h4>🩻 TB Detection from Chest X-Rays</h4>
+          <p>Deep convolutional screening model identifying pulmonary tuberculosis lesions to expedite frontline radiological triage.</p>
+          <p><code>TensorFlow</code> <code>OpenCV</code> <code>Medical-CV</code></p>
+          <p><a href="https://github.com/sazzyrocks/tb-chest-xray-detection"><b>Explore Project ↗</b></a></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="50%">
+          <h4>📈 BrokerAI</h4>
+          <p>Autonomous financial research agent synthesizing multi-source market signals, order-book telemetry, and news sentiment in real time.</p>
+          <p><code>Python</code> <code>AI-Agents</code> <code>FastAPI</code></p>
+          <p><a href="https://github.com/sazzyrocks/BrokerAI"><b>Explore Project ↗</b></a></p>
+        </td>
+        <td width="50%">
+          <h4>💳 LoanBridge</h4>
+          <p>End-to-end institutional credit assessment engine automating borrower solvency verification and multi-tenant lending workflows.</p>
+          <p><code>React</code> <code>Node.js</code> <code>MongoDB</code></p>
+          <p><a href="https://github.com/sazzyrocks/LoanBridge"><b>Explore Project ↗</b></a></p>
+        </td>
+      </tr>
+    </table>
 
-    <h3>Legal Case Management</h3>
-    <p>A full-stack web application for managing legal case workflows, users, and permissions. This project helped me think more carefully about roles, access control, and audit history.</p>
-    <p class="project-meta"><code>React</code> <code>Node.js</code> <code>MongoDB</code></p>
-    <p><a href="https://github.com/sazzyrocks/legal_case_management">Source code</a></p>
+    <details>
+      <summary><b>View Additional Applied Research &amp; Creative Tooling (AI Piano Tutor &amp; Policy Analytics)</b></summary>
+      <br>
+      <table>
+        <tr>
+          <td width="50%">
+            <h4>🎹 AI Piano Tutor</h4>
+            <p>Acoustic DSP pipeline providing real-time polyphonic pitch tracking and tactile tempo corrective feedback for music learners.</p>
+            <p><code>Python</code> <code>Librosa</code> <code>Audio-ML</code></p>
+            <p><a href="https://github.com/sazzyrocks/ai-piano-tutor"><b>Explore Project ↗</b></a></p>
+          </td>
+          <td width="50%">
+            <h4>📊 Data Science for Public Policy</h4>
+            <p>Econometric causal inference suite quantifying intervention impact and demographic resource allocation across municipal public datasets.</p>
+            <p><code>Python</code> <code>Causal-ML</code> <code>Statsmodels</code></p>
+            <p><a href="https://github.com/sazzyrocks/data-science-public-policy"><b>Explore Project ↗</b></a></p>
+          </td>
+        </tr>
+      </table>
+    </details>
 
-    <h2>Tools I use</h2>
-    <p><strong>AI and data:</strong> Python, machine learning, FastAPI</p>
-    <p><strong>Web &amp; Full-stack:</strong> TypeScript, JavaScript, React, Node.js</p>
-    <p><strong>Systems:</strong> C++, Java, SQL, MongoDB, Docker, Linux</p>
+    <hr>
 
-    <h2>A few things about me</h2>
+    <h3>✦ Technical Competency Matrix</h3>
     <ul>
-      <li>I learn best by building small, complete projects.</li>
-      <li>I care about whether a tool is actually useful, not just whether it looks impressive in a README.</li>
-      <li>I like clean interfaces, but I usually start with the underlying problem.</li>
+      <li><b>Machine Learning &amp; AI:</b> PyTorch, TensorFlow, Keras, OpenCV, Librosa, Scikit-learn, Signal Processing, Agentic Workflows</li>
+      <li><b>Web &amp; Full-Stack:</b> TypeScript, JavaScript (ESNext), React.js, Next.js, Node.js, Express, FastAPI, RESTful APIs</li>
+      <li><b>Systems &amp; Infrastructure:</b> C++ (C++20/STL), Java, MongoDB, PostgreSQL, SQL, Docker, Linux CLI, Git &amp; GitHub Actions</li>
     </ul>
 
-    <h2>Contribution Activity</h2>
+    <hr>
+
+    <h3>✦ Contribution Activity</h3>
     <div class="snake-box">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/pacman-contribution-graph-dark.svg">
         <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/pacman-contribution-graph.svg">
-        <img alt="Sajal's Pac-Man Contribution Activity" src="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/pacman-contribution-graph-dark.svg" width="100%" />
+        <img alt="Sajal Porey's Animated Pac-Man GitHub Contribution Activity Graph" src="https://raw.githubusercontent.com/sazzyrocks/sazzyrocks/output/pacman-contribution-graph-dark.svg" width="100%">
       </picture>
     </div>
 
-    <h2>Find me online</h2>
-    <ul>
-      <li><a href="https://portpolio-five-kappa.vercel.app/">Portfolio</a></li>
-      <li><a href="https://www.linkedin.com/in/sajal-p-786263325/">LinkedIn</a></li>
-      <li><a href="mailto:sajal.porey20@gmail.com">Email</a></li>
-    </ul>
-    <p class="closing">Thanks for stopping by.</p>
+    <hr>
+
+    <footer>
+      <sub>Open to Machine Learning, Full-Stack Engineering, and Systems Research Opportunities.</sub><br>
+      <sub><a href="mailto:sajal.porey20@gmail.com">sajal.porey20@gmail.com</a> &nbsp;•&nbsp; Kolkata, India</sub>
+    </footer>
   </main>
 </body>
 </html>
